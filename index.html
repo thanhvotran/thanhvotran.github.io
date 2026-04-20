@@ -1,3 +1,360 @@
-<head>
-  <meta http-equiv='refresh' content='0; URL=https://thafnhtran.notion.site/about-me'>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Tran, PhD | Principal Data Scientist & AI Engineer</title>
+    <meta
+      name="description"
+      content="Interactive portfolio of Thanh Tran, PhD — Principal Data Scientist & AI Engineer specializing in production AI, multimodal ML, and GenAI." />
+    <style>
+      :root {
+        --bg: #0b0718;
+        --bg-soft: #151029;
+        --card: #1d1536;
+        --line: #312355;
+        --text: #f8f7ff;
+        --muted: #b7acd8;
+        --accent: #a855f7;
+        --accent2: #22d3ee;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at top, #23124a 0%, var(--bg) 38%);
+        color: var(--text);
+      }
+      .container { width: min(1140px, 100%); margin: 0 auto; padding: 0 20px; }
+      .nav {
+        position: sticky; top: 0; z-index: 30;
+        background: rgba(11, 7, 24, 0.8);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav-inner { height: 70px; display: flex; align-items: center; justify-content: space-between; }
+      .logo { font-weight: 800; }
+      .logo span { color: var(--accent); }
+      .menu { display: flex; gap: 16px; }
+      .menu a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 0.94rem;
+        padding: 6px 8px;
+        border-radius: 8px;
+        transition: 0.2s;
+      }
+      .menu a:hover,
+      .menu a.active { color: var(--text); background: #271c45; }
+
+      .hero { padding: 84px 0 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; align-items: start; }
+      .kicker { text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent2); font-size: 0.74rem; font-weight: 700; }
+      h1 { margin: 10px 0 8px; font-size: clamp(2.1rem, 5vw, 3.5rem); line-height: 1.08; }
+      .lead { color: var(--muted); line-height: 1.72; font-size: 1.06rem; }
+      .cta { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+      .btn {
+        text-decoration: none; color: var(--text); border: 1px solid var(--line); border-radius: 999px;
+        padding: 10px 15px; font-size: 0.9rem; font-weight: 700;
+      }
+      .btn.primary { background: linear-gradient(90deg, #a855f7, #7e22ce); border-color: transparent; }
+
+      .hero-panel {
+        background: linear-gradient(180deg, #21133d, #180f31);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 16px;
+      }
+      .hero-panel h3 { margin: 0 0 8px; font-size: 1rem; }
+      .hero-panel p { margin: 6px 0; color: var(--muted); line-height: 1.5; }
+
+      .stats { margin-top: 10px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: #140e28; text-align: center; }
+      .stat b { display: block; font-size: 1.1rem; color: #ddd6fe; }
+      .stat span { font-size: 0.8rem; color: var(--muted); }
+
+      section { padding: 28px 0; }
+      h2 { margin: 0 0 10px; font-size: 1.45rem; }
+      .copy { color: var(--muted); line-height: 1.7; }
+
+      .timeline .item { border-bottom: 1px dashed var(--line); padding: 12px 0; }
+      .timeline .item:last-child { border: 0; }
+      .role { margin: 0; font-weight: 700; }
+      .org { margin: 3px 0; color: #ddd6fe; }
+      .date { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
+      .cards { margin-top: 14px; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+      .card {
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 14px;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+      .card:hover { transform: translateY(-4px); border-color: #6d4ca9; }
+      .card h3 { margin: 0; font-size: 1rem; }
+      .card p { margin: 8px 0 0; color: var(--muted); font-size: 0.93rem; line-height: 1.57; }
+
+      .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+      .tab-btn {
+        border: 1px solid var(--line);
+        background: #120c23;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 6px 12px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 0.82rem;
+      }
+      .tab-btn.active { background: #2a1a4d; color: var(--text); }
+
+      .pub-grid { margin-top: 10px; display: grid; gap: 10px; }
+      .pub-card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #130d26;
+        padding: 12px;
+      }
+      .pub-title { margin: 0; font-size: 1rem; color: #e9e4ff; }
+      .pub-meta { margin-top: 4px; color: var(--muted); font-size: 0.88rem; }
+      .pub-actions { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+      .mini-btn {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        color: var(--text);
+        background: transparent;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .modal {
+        position: fixed; inset: 0; z-index: 60;
+        background: rgba(4, 2, 10, 0.75);
+        display: none; align-items: center; justify-content: center;
+        padding: 14px;
+      }
+      .modal.open { display: flex; }
+      .modal-card {
+        width: min(760px, 100%);
+        background: #130d26;
+        border: 1px solid #4a2f80;
+        border-radius: 14px;
+        padding: 16px;
+      }
+      .modal h3 { margin: 0; }
+      .modal p { color: var(--muted); line-height: 1.6; }
+      .close {
+        float: right;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--text);
+        border-radius: 8px;
+        padding: 4px 8px;
+        cursor: pointer;
+      }
+
+      footer { margin-top: 22px; border-top: 1px solid var(--line); padding: 20px 0 32px; color: var(--muted); font-size: 0.9rem; }
+
+      .reveal { opacity: 0; transform: translateY(10px); transition: 0.45s ease; }
+      .reveal.show { opacity: 1; transform: translateY(0); }
+
+      @media (max-width: 900px) {
+        .hero { grid-template-columns: 1fr; }
+        .menu { gap: 8px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="logo">Thanh<span>Tran</span></div>
+        <nav class="menu">
+          <a href="#home">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero reveal" id="home">
+        <div>
+          <p class="kicker">Principal Data Scientist • AI Engineer</p>
+          <h1>Hi, I'm Thanh Tran, PhD</h1>
+          <p class="lead">I build production AI systems with strong research grounding in multimodal ML, transport intelligence, and GenAI applications.</p>
+          <div class="cta">
+            <a class="btn primary" href="mailto:ttranvo187@gmail.com">Hire / Contact</a>
+            <a class="btn" href="https://www.linkedin.com/in/thanhvtr" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://thanhvotran.github.io/" target="_blank" rel="noreferrer">Website</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <h3>At a glance</h3>
+          <p>Based in Brisbane. Leading analytics and AI initiatives from strategy to deployment.</p>
+          <div class="stats">
+            <div class="stat"><b>12+</b><span>Publications</span></div>
+            <div class="stat"><b>3</b><span>Core Domains</span></div>
+            <div class="stat"><b>PhD</b><span>Multimodal DL</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="experience" class="reveal">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="item"><p class="role">Senior Principal, Data Analytics</p><p class="org">The University of Queensland</p><p class="date">Feb 2026 – Present</p></article>
+          <article class="item"><p class="role">Data Scientist</p><p class="org">Department for Infrastructure and Transport</p><p class="date">Jun 2024 – Jan 2026</p></article>
+          <article class="item"><p class="role">Machine Learning Instructor / TA</p><p class="org">The University of Queensland</p><p class="date">Feb 2021 – Aug 2024</p></article>
+        </div>
+      </section>
+
+      <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <p class="copy">Interactive cards that mirror portfolio-template behavior and show practical AI work themes.</p>
+        <div class="cards">
+          <article class="card"><h3>Traffic Incident Intelligence</h3><p>Graph + multimodal deep learning for incident prediction and decision support.</p></article>
+          <article class="card"><h3>LLM Decision Copilot</h3><p>Retrieval-assisted workflows for policy drafting and operations Q&A.</p></article>
+          <article class="card"><h3>Generative Vision Pipeline</h3><p>Diffusion/GAN prototyping for robust restoration and scene automation.</p></article>
+        </div>
+      </section>
+
+      <section id="publications" class="reveal">
+        <h2>Publications (Showcase for Employers)</h2>
+        <p class="copy">Each publication includes business relevance so potential clients/employers can quickly understand impact.</p>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="all">All</button>
+          <button class="tab-btn" data-tab="transport">Transport AI</button>
+          <button class="tab-btn" data-tab="methods">Methods</button>
+        </div>
+
+        <div class="pub-grid" id="pubGrid"></div>
+      </section>
+
+      <section id="contact" class="reveal">
+        <h2>Contact</h2>
+        <p class="copy">Brisbane, Australia • <a href="tel:+6143912063" style="color:#d8b4fe">+61 439 120 63</a> • <a href="mailto:ttranvo187@gmail.com" style="color:#d8b4fe">ttranvo187@gmail.com</a></p>
+      </section>
+
+      <footer>© 2026 Thanh Tran, PhD — Principal Data Scientist & AI Engineer.</footer>
+    </main>
+
+    <div class="modal" id="pubModal" aria-hidden="true">
+      <div class="modal-card">
+        <button class="close" id="closeModal">Close</button>
+        <h3 id="modalTitle"></h3>
+        <p id="modalVenue"></p>
+        <p id="modalImpact"></p>
+        <p id="modalStack"></p>
+        <a class="mini-btn" id="modalLink" href="#" target="_blank" rel="noreferrer">Open publication</a>
+      </div>
+    </div>
+
+    <script>
+      const publications = [
+        {
+          title: "M2NN: Multi-view multi-task graph neural network",
+          venue: "Transportation Research Part C, 2025",
+          impact: "Employer relevance: demonstrates scalable incident prediction capability for large transport networks.",
+          stack: "Graph neural networks, multi-view learning, spatiotemporal modeling.",
+          link: "https://www.sciencedirect.com/science/article/pii/S0968090X25004620",
+          tags: ["transport", "methods"]
+        },
+        {
+          title: "MSGNN: Multi-structured GNN for real-time incident prediction",
+          venue: "Transportation Research Part C, 2023",
+          impact: "Employer relevance: shows real-time ML design for operations and safety decision-making.",
+          stack: "Structured GNNs, realtime inference, traffic operations analytics.",
+          link: "https://www.sciencedirect.com/science/article/pii/S0968090X23003443",
+          tags: ["transport", "methods"]
+        },
+        {
+          title: "Trajectory-user linking with a deep neural network",
+          venue: "ATRF, 2023",
+          impact: "Employer relevance: evidence of robust pattern recognition applied to noisy real-world mobility data.",
+          stack: "Deep neural networks, trajectory analysis, identity linkage modeling.",
+          link: "https://australasiantransportresearchforum.org.au/wp-content/uploads/2023/12/ATRF_2023_Paper_43.pdf",
+          tags: ["transport"]
+        }
+      ];
+
+      const pubGrid = document.getElementById("pubGrid");
+      const tabBtns = [...document.querySelectorAll(".tab-btn")];
+
+      function renderPublications(tab = "all") {
+        const filtered = tab === "all" ? publications : publications.filter((p) => p.tags.includes(tab));
+        pubGrid.innerHTML = filtered
+          .map((p, i) => `
+            <article class="pub-card">
+              <p class="pub-title">${p.title}</p>
+              <p class="pub-meta">${p.venue}</p>
+              <div class="pub-actions">
+                <button class="mini-btn" onclick="openModal(${publications.indexOf(p)})">Why it matters</button>
+                <a class="mini-btn" href="${p.link}" target="_blank" rel="noreferrer">Read paper</a>
+              </div>
+            </article>
+          `)
+          .join("");
+      }
+
+      tabBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          tabBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          renderPublications(btn.dataset.tab);
+        });
+      });
+
+      const modal = document.getElementById("pubModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalVenue = document.getElementById("modalVenue");
+      const modalImpact = document.getElementById("modalImpact");
+      const modalStack = document.getElementById("modalStack");
+      const modalLink = document.getElementById("modalLink");
+      function openModal(idx) {
+        const p = publications[idx];
+        modalTitle.textContent = p.title;
+        modalVenue.textContent = p.venue;
+        modalImpact.textContent = p.impact;
+        modalStack.textContent = "Technical stack: " + p.stack;
+        modalLink.href = p.link;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+      }
+      window.openModal = openModal;
+      document.getElementById("closeModal").addEventListener("click", () => {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+      });
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("open");
+          modal.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      const sections = [...document.querySelectorAll("main section")];
+      const links = [...document.querySelectorAll(".menu a")];
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              const id = entry.target.id;
+              links.forEach((l) => l.classList.toggle("active", l.getAttribute("href") === `#${id}`));
+            }
+          });
+        },
+        { threshold: 0.35 }
+      );
+      sections.forEach((s) => io.observe(s));
+
+      renderPublications();
+    </script>
+  </body>
+</html>
