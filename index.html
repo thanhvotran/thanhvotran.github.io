@@ -3,176 +3,237 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thanh Vo Tran | Principal Data Scientist & AI Engineer</title>
+    <title>Thanh Tran, PhD | Principal Data Scientist & AI Engineer</title>
     <meta
       name="description"
-      content="Principal Data Scientist and AI Engineer portfolio: AI strategy, GenAI systems, MLOps, and decision intelligence."
+      content="Minimal portfolio for Thanh Tran, PhD — Principal Data Scientist and AI Engineer focused on GenAI, multimodal ML, and production systems."
     />
     <style>
       :root {
-        --bg: #0f172a;
-        --panel: #111827;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --accent: #22d3ee;
-        --border: #1f2937;
+        --bg: #f1f5f9;
+        --panel: #1e293b;
+        --panel-2: #334155;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --line: #e2e8f0;
+        --accent: #0ea5e9;
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at top, #e2e8f0, var(--bg) 45%);
         color: var(--text);
-        background: radial-gradient(circle at top, #1e293b, var(--bg) 60%);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       }
 
-      .container {
-        width: min(100%, 980px);
+      .wrap {
+        width: min(1080px, 100%);
         margin: 0 auto;
-        padding: 64px 20px;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
       }
 
-      .card {
-        background: color-mix(in srgb, var(--panel) 92%, transparent);
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 32px;
+      .side {
+        background: var(--panel);
+        color: #f8fafc;
+        padding: 28px 22px;
       }
 
-      h1 {
-        margin: 8px 0 16px;
-        font-size: clamp(2rem, 5vw, 3.5rem);
-        line-height: 1.1;
+      .main {
+        background: var(--card);
+        padding: 36px 34px;
       }
 
-      h2 {
-        margin: 0 0 10px;
-        font-size: 1.1rem;
-      }
+      h1, h2, h3, p { margin: 0; }
 
-      p {
-        margin: 0;
-        line-height: 1.6;
-      }
+      h1 { font-size: clamp(2rem, 4vw, 2.7rem); line-height: 1.1; }
+      h2 { font-size: 1.25rem; margin-bottom: 10px; }
 
-      .eyebrow {
-        color: var(--accent);
-        text-transform: uppercase;
-        letter-spacing: 0.18em;
-        font-size: 0.78rem;
-        font-weight: 700;
-      }
-
-      .intro {
+      .lead {
         margin-top: 8px;
-        max-width: 70ch;
         color: var(--muted);
         font-size: 1.08rem;
+        line-height: 1.7;
+        max-width: 65ch;
       }
 
-      .actions {
-        margin-top: 24px;
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
+      .section { margin-top: 28px; }
+      .section + .section { border-top: 1px solid var(--line); padding-top: 24px; }
 
-      .btn {
-        display: inline-block;
-        text-decoration: none;
+      .subtle { color: var(--muted); margin-top: 4px; }
+
+      .item { margin-top: 18px; }
+      .item h3 { font-size: 1.02rem; }
+      .item p { margin-top: 4px; color: #334155; line-height: 1.58; }
+
+      .role { font-weight: 700; margin-top: 2px; }
+      .date { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
+
+      .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+      .tag {
+        border: 1px solid var(--line);
         border-radius: 999px;
-        padding: 10px 16px;
-        font-weight: 700;
-        border: 1px solid var(--border);
+        padding: 4px 10px;
+        font-size: 0.82rem;
+        color: #334155;
+        background: #f8fafc;
       }
 
-      .btn.primary {
-        background: var(--accent);
-        color: #082f49;
-        border-color: transparent;
-      }
-
-      .grid {
-        margin-top: 20px;
+      .project-grid {
         display: grid;
-        gap: 14px;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 12px;
       }
 
-      .tile {
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 18px;
-        background: #0b1220;
+      .project {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px;
+        background: #f8fbff;
       }
 
-      .tile p {
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
+      .project p { margin-top: 6px; color: #334155; font-size: 0.93rem; line-height: 1.5; }
 
-      .focus {
-        margin-top: 20px;
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 18px;
-        background: #0b1220;
-      }
+      .side-group { margin-top: 20px; }
+      .side-group h3 { font-size: 0.98rem; letter-spacing: 0.03em; margin-bottom: 8px; text-transform: uppercase; color: #cbd5e1; }
 
-      ul {
-        margin: 10px 0 0;
-        padding-left: 20px;
-        color: var(--muted);
-      }
+      .side-list { list-style: none; margin: 0; padding: 0; }
+      .side-list li { margin: 6px 0; color: #e2e8f0; font-size: 0.93rem; line-height: 1.35; }
+      .side a { color: #bae6fd; text-decoration: none; }
 
-      li + li {
-        margin-top: 6px;
+      .btn-row { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+      .btn {
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        border: 1px solid var(--panel-2);
+        color: #e2e8f0;
+      }
+      .btn.primary { background: var(--accent); color: #082f49; border-color: transparent; }
+
+      @media (max-width: 900px) {
+        .wrap { grid-template-columns: 1fr; }
+        .main, .side { padding: 22px 18px; }
       }
     </style>
   </head>
   <body>
-    <main class="container">
-      <section class="card">
-        <p class="eyebrow">Principal Data Scientist • AI Engineer</p>
-        <h1>Thanh Vo Tran</h1>
-        <p class="intro">
-          I build and scale AI systems that connect research excellence with measurable business outcomes across product,
-          analytics, and engineering teams.
-        </p>
-
-        <div class="actions">
-          <a class="btn primary" href="mailto:hello@thanhvotran.com">Contact</a>
-          <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+    <div class="wrap">
+      <aside class="side">
+        <h2>Thanh Tran, PhD</h2>
+        <p class="subtle" style="color:#cbd5e1">Principal Data Scientist & AI Engineer</p>
+        <div class="btn-row">
+          <a class="btn primary" href="mailto:ttranvo187@gmail.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/thanhvtr" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
 
-        <div class="grid" aria-label="Highlights">
-          <article class="tile">
-            <h2>AI Strategy & Leadership</h2>
-            <p>Translate executive vision into an actionable AI roadmap with clear impact metrics.</p>
-          </article>
-          <article class="tile">
-            <h2>Production ML Systems</h2>
-            <p>Design reliable model pipelines, observability, and governance for high-trust deployment.</p>
-          </article>
-          <article class="tile">
-            <h2>Decision Intelligence</h2>
-            <p>Drive experimentation, forecasting, and data-informed decisions that compound growth.</p>
-          </article>
-        </div>
-
-        <section class="focus" aria-label="Core focus">
-          <h2>Core Focus</h2>
-          <ul>
-            <li>Generative AI and LLM applications</li>
-            <li>Applied machine learning and MLOps</li>
-            <li>Forecasting, experimentation, and causal thinking</li>
-            <li>Cross-functional data and AI leadership</li>
+        <section class="side-group">
+          <h3>Contact</h3>
+          <ul class="side-list">
+            <li>Brisbane, Australia</li>
+            <li><a href="tel:+6143912063">+61 439 120 63</a></li>
+            <li><a href="https://thanhvotran.github.io/" target="_blank" rel="noreferrer">Personal website</a></li>
           </ul>
         </section>
-      </section>
-    </main>
+
+        <section class="side-group">
+          <h3>Core Skills</h3>
+          <ul class="side-list">
+            <li>GenAI & LLM systems</li>
+            <li>Multimodal deep learning</li>
+            <li>Production MLOps (AWS/Databricks)</li>
+            <li>Experimentation & decision intelligence</li>
+          </ul>
+        </section>
+
+        <section class="side-group">
+          <h3>Highlights</h3>
+          <ul class="side-list">
+            <li>PhD in Multi-Modal Deep Learning</li>
+            <li>12+ peer-reviewed publications</li>
+            <li>UNESCO Hackathon Runner-up</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="main">
+        <header>
+          <h1>Principal Data Scientist who ships practical AI</h1>
+          <p class="lead">
+            I turn cutting-edge machine learning research into reliable production systems. My focus is building
+            trustworthy AI products that drive measurable value across public-sector and enterprise environments.
+          </p>
+          <div class="tags">
+            <span class="tag">Principal-level leadership</span>
+            <span class="tag">End-to-end ML lifecycle</span>
+            <span class="tag">AI strategy + delivery</span>
+          </div>
+        </header>
+
+        <section class="section">
+          <h2>Experience</h2>
+
+          <article class="item">
+            <h3>The University of Queensland</h3>
+            <p class="role">Senior Principal, Data Analytics</p>
+            <p class="date">Feb 2026 – Present • Greater Brisbane Area</p>
+            <p>Leading advanced analytics and AI initiatives for student success, quality improvement, and strategic planning.</p>
+          </article>
+
+          <article class="item">
+            <h3>Department for Infrastructure and Transport</h3>
+            <p class="role">Data Scientist</p>
+            <p class="date">Jun 2024 – Jan 2026</p>
+            <p>Built production multimodal AI for road-asset assessment and forecasting, with rigorous experimentation and rollout.</p>
+          </article>
+
+          <article class="item">
+            <h3>The University of Queensland</h3>
+            <p class="role">Machine Learning Instructor / Teaching Assistant</p>
+            <p class="date">Feb 2021 – Aug 2024</p>
+            <p>Taught machine learning and software engineering, mentoring students on practical, industry-ready AI solutions.</p>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2>Selected Projects</h2>
+          <div class="project-grid">
+            <article class="project">
+              <h3>Traffic Incident Intelligence</h3>
+              <p>Large-scale graph + multimodal deep learning for real-time incident forecasting and transport operations.</p>
+            </article>
+            <article class="project">
+              <h3>Generative Vision Pipeline</h3>
+              <p>Fine-tuned diffusion/GAN workflows for robust image restoration and 3D scene reconstruction tasks.</p>
+            </article>
+            <article class="project">
+              <h3>LLM Decision Copilot</h3>
+              <p>Designed retrieval-assisted assistant workflows to improve policy drafting and stakeholder Q&A speed.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <article class="item">
+            <h3>The University of Queensland</h3>
+            <p class="role">Doctor of Philosophy (PhD), Multi-Modal Deep Learning</p>
+            <p class="date">2021 – 2024</p>
+          </article>
+          <article class="item">
+            <h3>The University of Queensland</h3>
+            <p class="role">Bachelor of Engineering (Honours), Software Engineering</p>
+            <p class="date">2018 – 2020</p>
+          </article>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
