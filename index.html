@@ -1,3 +1,312 @@
-<head>
-  <meta http-equiv='refresh' content='0; URL=https://thafnhtran.notion.site/about-me'>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Tran, PhD | Principal Data Scientist & AI Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Thanh Tran, PhD — Principal Data Scientist & AI Engineer specializing in production AI systems, multimodal ML, and GenAI." />
+    <style>
+      :root {
+        --bg: #070511;
+        --panel: #131022;
+        --panel-soft: #191430;
+        --line: #2c2450;
+        --text: #f7f5ff;
+        --muted: #beb7da;
+        --accent: #9b5cff;
+        --accent-2: #56d0ff;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top left, #24164e 0%, var(--bg) 40%);
+      }
+      .container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+      a { color: #d8b4fe; text-decoration: none; }
+
+      .nav-wrap {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(6px);
+        background: rgba(8, 6, 16, 0.84);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand { color: var(--text); font-weight: 800; letter-spacing: 0.01em; }
+      .brand span { color: var(--accent); }
+      .menu { display: flex; gap: 1rem; }
+      .menu a { color: var(--muted); font-size: 0.94rem; }
+      .menu a:hover { color: var(--text); }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 1rem;
+        padding: 3.6rem 0 2rem;
+      }
+      .kicker {
+        color: var(--accent-2);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+      h1 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; margin: 0.6rem 0 0.8rem; }
+      .lead { color: var(--muted); line-height: 1.7; max-width: 66ch; }
+      .cta { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; }
+      .btn {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 0.55rem 0.95rem;
+        color: var(--text);
+        font-weight: 600;
+      }
+      .btn.primary { background: linear-gradient(90deg, #a855f7, #7c3aed); border-color: transparent; }
+
+      .summary {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: linear-gradient(180deg, #17122c, #120f23);
+        padding: 1rem;
+      }
+      .summary h3 { margin-top: 0; margin-bottom: 0.55rem; }
+      .summary p { color: var(--muted); line-height: 1.6; margin: 0.45rem 0; }
+      .chips { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+      .chip {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #120d22;
+        color: #d6cdf5;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.78rem;
+      }
+
+      section { padding: 1rem 0; }
+      .section-title { margin: 0 0 0.65rem; font-size: 1.35rem; }
+      .muted { color: var(--muted); }
+      .grid { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--panel);
+        padding: 0.95rem;
+      }
+      .card h3 { margin: 0 0 0.45rem; font-size: 1rem; }
+      .card p { margin: 0.2rem 0; color: var(--muted); }
+
+      .timeline .item { border-left: 2px solid #392d65; padding: 0.2rem 0 0.6rem 0.85rem; margin-left: 0.35rem; }
+      .timeline .item h3 { margin: 0; }
+      .timeline .item p { margin: 0.2rem 0 0; color: var(--muted); }
+
+      .tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.6rem 0 0.8rem; }
+      .tab {
+        border: 1px solid var(--line);
+        background: #120d22;
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 0.34rem 0.78rem;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .tab.active { color: var(--text); background: #261b46; }
+
+      .contact {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--panel-soft);
+        padding: 1rem;
+      }
+      .footer {
+        margin-top: 1.5rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        padding: 1rem 0 2rem;
+      }
+      @media (max-width: 900px) {
+        .hero { grid-template-columns: 1fr; }
+        .nav { height: auto; padding: 0.8rem 0; flex-direction: column; gap: 0.6rem; }
+        .menu { flex-wrap: wrap; justify-content: center; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav-wrap">
+      <nav class="nav container">
+        <a class="brand" href="#home">Thanh Tran<span>, PhD</span></a>
+        <div class="menu">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container" id="home">
+      <section class="hero">
+        <div>
+          <div class="kicker">Principal Data Scientist · AI Engineer</div>
+          <h1>Building practical AI systems with research depth.</h1>
+          <p class="lead">
+            I lead end-to-end analytics and AI delivery — from strategy and experimentation
+            to production deployment — across multimodal ML, graph learning, and GenAI.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="mailto:t.tranvo187@gmail.com">Contact</a>
+            <a class="btn" href="https://www.linkedin.com/in/thanhvtr" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://thanhvotran.github.io/" target="_blank" rel="noreferrer">Website</a>
+          </div>
+        </div>
+        <aside class="summary">
+          <h3>At a glance</h3>
+          <p>Brisbane-based data/AI leader with a PhD in multimodal deep learning.</p>
+          <p>Focus: deployable AI for real-world decisions, not research-only prototypes.</p>
+          <div class="chips">
+            <span class="chip">Multimodal ML</span>
+            <span class="chip">Graph AI</span>
+            <span class="chip">LLM Workflows</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About</h2>
+        <div class="card">
+          <p class="muted">
+            Senior analytics and AI leader with delivery experience across public-sector transport,
+            academia, and enterprise transformation programs.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article class="item">
+            <h3>Senior Principal, Data Analytics</h3>
+            <p>The University of Queensland · Feb 2026 – Present</p>
+          </article>
+          <article class="item">
+            <h3>Data Scientist</h3>
+            <p>Department for Infrastructure and Transport · Jun 2024 – Jan 2026</p>
+          </article>
+          <article class="item">
+            <h3>Machine Learning Instructor / TA</h3>
+            <p>The University of Queensland · Feb 2021 – Aug 2024</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Traffic Incident Intelligence</h3>
+            <p>Graph + multimodal models for risk forecasting and operational triage.</p>
+          </article>
+          <article class="card">
+            <h3>LLM Decision Copilot</h3>
+            <p>Retrieval-assisted assistant for policy drafting and domain Q&A.</p>
+          </article>
+          <article class="card">
+            <h3>More case studies</h3>
+            <p>Additional portfolio write-ups and demos coming soon.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2 class="section-title">Publications (Employer Showcase)</h2>
+        <p class="muted">Each paper includes a practical relevance angle for clients/employers.</p>
+        <div class="tabs">
+          <button class="tab active" data-cat="all">All</button>
+          <button class="tab" data-cat="transport">Transport AI</button>
+          <button class="tab" data-cat="methods">Methods</button>
+        </div>
+        <div class="grid" id="pub-grid"></div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact">
+          <p class="muted">Brisbane, Australia · <a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a></p>
+        </div>
+      </section>
+
+      <footer class="footer">© 2026 Thanh Tran, PhD · Principal Data Scientist & AI Engineer</footer>
+    </main>
+
+    <script>
+      const papers = [
+        {
+          title: "M2NN: A multimodal mobility neural network framework",
+          venue: "Transportation Research Part C (2025)",
+          cat: "transport",
+          link: "https://www.sciencedirect.com/science/article/pii/S0968090X25004620",
+          impact: "Scalable multimodal traffic prediction for planning and operations."
+        },
+        {
+          title: "MSGNN: A multimodal urban traffic speed prediction model",
+          venue: "Transportation Research Part C (2023)",
+          cat: "transport",
+          link: "https://www.sciencedirect.com/science/article/pii/S0968090X23003698",
+          impact: "Improves congestion forecasting for proactive decision support."
+        },
+        {
+          title: "Trajectory-user linking with a deep neural network",
+          venue: "Australasian Transport Research Forum (2023)",
+          cat: "methods",
+          link: "https://www.australasiantransportresearchforum.org.au/wp-content/uploads/2023/09/ATRF_2023_Paper_43.pdf",
+          impact: "Representation learning for mobility behavior intelligence use-cases."
+        },
+        {
+          title: "Online traffic incident prediction with hybrid graph continual learning",
+          venue: "Australasian Transport Research Forum (2022)",
+          cat: "transport",
+          link: "https://trid.trb.org/View/2259782",
+          impact: "Deployable continual-learning approach for incident early warning."
+        }
+      ];
+
+      const grid = document.getElementById("pub-grid");
+      const tabs = [...document.querySelectorAll(".tab")];
+
+      function render(cat = "all") {
+        const list = cat === "all" ? papers : papers.filter((p) => p.cat === cat);
+        grid.innerHTML = list
+          .map(
+            (p) => `
+              <article class="card">
+                <h3>${p.title}</h3>
+                <p>${p.venue}</p>
+                <p>${p.impact}</p>
+                <p><a href="${p.link}" target="_blank" rel="noreferrer">Read publication</a></p>
+              </article>`
+          )
+          .join("");
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+          render(tab.dataset.cat);
+        });
+      });
+
+      render();
+    </script>
+  </body>
+</html>
