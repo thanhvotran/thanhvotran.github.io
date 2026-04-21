@@ -81,7 +81,7 @@ export default function App() {
             graph methods, and LLM workflows into deployable solutions.
           </p>
           <div className="cta-row">
-            <a className="btn btn-primary" href="mailto:ttranvo187@gmail.com">
+            <a className="btn btn-primary" href="mailto:t.tranvo187@gmail.com">
               Contact
             </a>
             <a className="btn" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/thanhvtr">
@@ -183,8 +183,7 @@ export default function App() {
           <div className="container card">
             <h2>Contact</h2>
             <p>
-              Brisbane, Australia · <a href="mailto:ttranvo187@gmail.com">ttranvo187@gmail.com</a> ·{" "}
-              <a href="tel:+6143912063">+61 439 120 63</a>
+              Brisbane, Australia · <a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a>
             </p>
           </div>
         </section>
