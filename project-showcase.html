@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Showcase | Thanh Tran, PhD</title>
+    <script>
+      (function () {
+        const badHosts = new Set(["thanhtran.au", "www.thanhtran.au"]);
+        if (badHosts.has(window.location.hostname)) {
+          const target = "https://thanhvotran.github.io" + window.location.pathname + window.location.search + window.location.hash;
+          window.location.replace(target);
+        }
+      })();
+    </script>
+    <style>
+      body{margin:0;font-family:Inter,system-ui;background:#0b0817;color:#f6f3ff}
+      .wrap{width:min(980px,calc(100% - 2rem));margin:0 auto;padding:1.4rem 0 2rem}
+      .card{border:1px solid #2e2550;background:#151127;border-radius:12px;padding:1rem;margin:.8rem 0}
+      h1{margin:.2rem 0 .6rem;font-size:2rem} h2{margin:.2rem 0 .5rem}
+      p,li{color:#c7c0e6;line-height:1.65} a{color:#d8b4fe}
+      .tag{display:inline-block;border:1px solid #3f2f72;border-radius:999px;padding:.2rem .6rem;font-size:.8rem;margin-right:.35rem}
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <a href="./index.html#projects">← Back to portfolio</a>
+      <h1>Project Showcase</h1>
+      <p>Deep-dive project cards for prospective employers/clients. Add screenshots, architecture diagrams, and outcomes.</p>
+
+      <section id="traffic-intelligence" class="card">
+        <h2>Traffic Incident Intelligence</h2>
+        <span class="tag">Graph AI</span><span class="tag">Multimodal</span><span class="tag">Prediction</span>
+        <ul>
+          <li>Designed multimodal forecasting pipeline for incident risk and triage.</li>
+          <li>Framed outputs for operational users and intervention planning.</li>
+          <li><em>Placeholder:</em> add data volume, prediction horizon, and accuracy improvements.</li>
+        </ul>
+      </section>
+
+      <section id="llm-copilot" class="card">
+        <h2>LLM Decision Copilot</h2>
+        <span class="tag">GenAI</span><span class="tag">RAG</span><span class="tag">Knowledge Assist</span>
+        <ul>
+          <li>Built retrieval-assisted workflow for policy drafting and expert Q&A.</li>
+          <li>Focused on reliability and traceability for business users.</li>
+          <li><em>Placeholder:</em> add architecture diagram, guardrails, and adoption metrics.</li>
+        </ul>
+      </section>
+
+      <section id="coming-soon" class="card">
+        <h2>Roadmap / More Case Studies</h2>
+        <ul>
+          <li>Computer vision + multimodal analytics showcase.</li>
+          <li>LLM + graph hybrid reasoning showcase.</li>
+          <li><em>Placeholder:</em> add links to demos, write-ups, and repositories.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
