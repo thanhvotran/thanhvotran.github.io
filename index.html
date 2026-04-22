@@ -7,6 +7,15 @@
     <meta
       name="description"
       content="Portfolio of Thanh Tran, PhD — Principal Data Scientist & AI Engineer specializing in production AI systems, multimodal ML, and GenAI." />
+    <script>
+      (function () {
+        const badHosts = new Set(["thanhtran.au", "www.thanhtran.au"]);
+        if (badHosts.has(window.location.hostname)) {
+          const target = "https://thanhvotran.github.io" + window.location.pathname + window.location.search + window.location.hash;
+          window.location.replace(target);
+        }
+      })();
+    </script>
     <style>
       :root {
         --bg: #070511;
