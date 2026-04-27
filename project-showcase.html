@@ -3,48 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Showcase | Thanh Tran, PhD</title>
+    <title>Project Showcase | Thanh Tran</title>
     <style>
-      body{margin:0;font-family:Inter,system-ui;background:#0b0817;color:#f6f3ff}
-      .wrap{width:min(980px,calc(100% - 2rem));margin:0 auto;padding:1.4rem 0 2rem}
-      .card{border:1px solid #2e2550;background:#151127;border-radius:12px;padding:1rem;margin:.8rem 0}
-      h1{margin:.2rem 0 .6rem;font-size:2rem} h2{margin:.2rem 0 .5rem}
-      p,li{color:#c7c0e6;line-height:1.65} a{color:#d8b4fe}
-      .tag{display:inline-block;border:1px solid #3f2f72;border-radius:999px;padding:.2rem .6rem;font-size:.8rem;margin-right:.35rem}
+      :root {
+        --bg: #f3efe6;
+        --paper: rgba(255, 252, 247, 0.9);
+        --ink: #18212b;
+        --muted: #576474;
+        --line: rgba(24, 33, 43, 0.14);
+        --accent: #0d5c63;
+        --shadow: 0 20px 55px rgba(24, 33, 43, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at right top, rgba(204, 152, 83, 0.12), transparent 24%),
+          linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      }
+
+      a { color: var(--accent); text-decoration: none; }
+
+      .wrap {
+        width: min(980px, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 2rem 0 3rem;
+      }
+
+      .back {
+        display: inline-flex;
+        margin-bottom: 1.25rem;
+        font-weight: 700;
+      }
+
+      .hero,
+      .project {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        padding: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        line-height: 1;
+      }
+
+      .hero p,
+      .project p,
+      .project li {
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+
+      .project {
+        padding: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1rem 0;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0.4rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        background: rgba(13, 92, 99, 0.08);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
     </style>
   </head>
   <body>
     <main class="wrap">
-      <a href="./index.html#projects">← Back to portfolio</a>
-      <h1>Project Showcase</h1>
-      <p>Deep-dive project cards for prospective employers/clients. Add screenshots, architecture diagrams, and outcomes.</p>
+      <a class="back" href="./index.html#projects">← Back to portfolio</a>
 
-      <section id="traffic-intelligence" class="card">
+      <section class="hero">
+        <p class="eyebrow">Project Showcase</p>
+        <h1>Selected case studies with room for stronger evidence.</h1>
+        <p>
+          These pages are positioned for employer review. Add diagrams, screenshots, links,
+          and hard metrics as you refine the underlying portfolio story.
+        </p>
+      </section>
+
+      <section id="traffic-intelligence" class="project">
         <h2>Traffic Incident Intelligence</h2>
-        <span class="tag">Graph AI</span><span class="tag">Multimodal</span><span class="tag">Prediction</span>
+        <div class="tags">
+          <span class="tag">Graph AI</span>
+          <span class="tag">Multimodal</span>
+          <span class="tag">Prediction</span>
+        </div>
         <ul>
-          <li>Designed multimodal forecasting pipeline for incident risk and triage.</li>
-          <li>Framed outputs for operational users and intervention planning.</li>
-          <li><em>Placeholder:</em> add data volume, prediction horizon, and accuracy improvements.</li>
+          <li>Designed a forecasting pipeline for incident risk, prioritization, and operational triage.</li>
+          <li>Combined technical modeling choices with the needs of frontline decision-makers.</li>
+          <li>Add evidence here: data scale, prediction horizon, baseline lift, and deployment context.</li>
         </ul>
       </section>
 
-      <section id="llm-copilot" class="card">
+      <section id="llm-copilot" class="project">
         <h2>LLM Decision Copilot</h2>
-        <span class="tag">GenAI</span><span class="tag">RAG</span><span class="tag">Knowledge Assist</span>
+        <div class="tags">
+          <span class="tag">GenAI</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Knowledge Assist</span>
+        </div>
         <ul>
-          <li>Built retrieval-assisted workflow for policy drafting and expert Q&A.</li>
-          <li>Focused on reliability and traceability for business users.</li>
-          <li><em>Placeholder:</em> add architecture diagram, guardrails, and adoption metrics.</li>
+          <li>Built a retrieval-assisted workflow for policy drafting and expert question answering.</li>
+          <li>Focused on trust, traceability, and practical usefulness for business users.</li>
+          <li>Add architecture detail here: retrieval strategy, guardrails, evaluation, and adoption signals.</li>
         </ul>
       </section>
 
-      <section id="coming-soon" class="card">
-        <h2>Roadmap / More Case Studies</h2>
+      <section id="coming-soon" class="project">
+        <h2>Roadmap / Additional Case Studies</h2>
+        <div class="tags">
+          <span class="tag">Vision</span>
+          <span class="tag">Graph Reasoning</span>
+          <span class="tag">GenAI Systems</span>
+        </div>
         <ul>
-          <li>Computer vision + multimodal analytics showcase.</li>
-          <li>LLM + graph hybrid reasoning showcase.</li>
-          <li><em>Placeholder:</em> add links to demos, write-ups, and repositories.</li>
+          <li>Computer vision and multimodal analytics portfolio entry.</li>
+          <li>LLM plus graph hybrid reasoning portfolio entry.</li>
+          <li>Production analytics platform entry with architecture and business impact.</li>
         </ul>
       </section>
     </main>

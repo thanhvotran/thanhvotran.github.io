@@ -3,319 +3,794 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thanh Tran, PhD | Principal Data Scientist & AI Engineer</title>
+    <title>Thanh Tran | Principal Data Scientist & AI Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Thanh Tran, PhD — Principal Data Scientist & AI Engineer specializing in production AI systems, multimodal ML, and GenAI." />
+      content="Portfolio of Thanh Tran, PhD — Principal Data Scientist and AI Engineer building production AI systems, multimodal ML, and decision intelligence." />
     <style>
       :root {
-        --bg: #070511;
-        --panel: #131022;
-        --panel-soft: #191430;
-        --line: #2c2450;
-        --text: #f7f5ff;
-        --muted: #beb7da;
-        --accent: #9b5cff;
-        --accent-2: #56d0ff;
+        --bg: #f3efe6;
+        --paper: rgba(255, 252, 247, 0.88);
+        --card: rgba(255, 251, 245, 0.78);
+        --ink: #18212b;
+        --muted: #576474;
+        --line: rgba(24, 33, 43, 0.14);
+        --accent: #0d5c63;
+        --accent-strong: #0b3c49;
+        --accent-soft: #d7ebe9;
+        --shadow: 0 20px 55px rgba(24, 33, 43, 0.08);
       }
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        color: var(--text);
-        background: radial-gradient(circle at top left, #24164e 0%, var(--bg) 40%);
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(13, 92, 99, 0.11), transparent 34%),
+          radial-gradient(circle at right 15%, rgba(204, 152, 83, 0.12), transparent 28%),
+          linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
       }
-      .container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
-      a { color: #d8b4fe; text-decoration: none; }
 
-      .nav-wrap {
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .shell {
+        width: min(1140px, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .topbar {
         position: sticky;
         top: 0;
         z-index: 20;
-        backdrop-filter: blur(6px);
-        background: rgba(8, 6, 16, 0.84);
+        backdrop-filter: blur(10px);
+        background: rgba(243, 239, 230, 0.76);
         border-bottom: 1px solid var(--line);
       }
-      .nav {
-        height: 68px;
+
+      .topbar-inner {
+        min-height: 76px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 1rem;
       }
-      .brand { color: var(--text); font-weight: 800; letter-spacing: 0.01em; }
-      .brand span { color: var(--accent); }
-      .menu { display: flex; gap: 1rem; }
-      .menu a { color: var(--muted); font-size: 0.94rem; }
-      .menu a:hover { color: var(--text); }
+
+      .brand {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+
+      .brand-mark {
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-note {
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.9rem 1.2rem;
+      }
+
+      .nav a {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        color: var(--accent-strong);
+      }
 
       .hero {
         display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 1rem;
-        padding: 3.6rem 0 2rem;
+        grid-template-columns: minmax(0, 1.2fr) minmax(290px, 0.8fr);
+        gap: 1.25rem;
+        padding: 3rem 0 2rem;
       }
-      .kicker {
-        color: var(--accent-2);
-        letter-spacing: 0.12em;
+
+      .panel,
+      .card,
+      .contact-panel {
+        border: 1px solid var(--line);
+        background: var(--paper);
+        box-shadow: var(--shadow);
+        border-radius: 28px;
+      }
+
+      .hero-copy {
+        padding: 2rem;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--accent);
+        font-size: 0.78rem;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
-        font-size: 0.75rem;
         font-weight: 700;
       }
-      h1 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.08; margin: 0.6rem 0 0.8rem; }
-      .lead { color: var(--muted); line-height: 1.7; max-width: 66ch; }
-      .cta { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; }
-      .btn {
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        padding: 0.55rem 0.95rem;
-        color: var(--text);
-        font-weight: 600;
-      }
-      .btn.primary { background: linear-gradient(90deg, #a855f7, #7c3aed); border-color: transparent; }
 
-      .summary {
-        border: 1px solid var(--line);
-        border-radius: 14px;
-        background: linear-gradient(180deg, #17122c, #120f23);
-        padding: 1rem;
-      }
-      .summary h3 { margin-top: 0; margin-bottom: 0.55rem; }
-      .summary p { color: var(--muted); line-height: 1.6; margin: 0.45rem 0; }
-      .chips { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
-      .chip {
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        background: #120d22;
-        color: #d6cdf5;
-        padding: 0.3rem 0.7rem;
-        font-size: 0.78rem;
+      .eyebrow::before {
+        content: "";
+        width: 2.4rem;
+        height: 1px;
+        background: currentColor;
       }
 
-      section { padding: 1rem 0; }
-      .section-title { margin: 0 0 0.65rem; font-size: 1.35rem; }
-      .muted { color: var(--muted); }
-      .grid { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-      .card {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        background: var(--panel);
-        padding: 0.95rem;
+      h1,
+      h2,
+      h3 {
+        margin: 0;
       }
-      .card h3 { margin: 0 0 0.45rem; font-size: 1rem; }
-      .card p { margin: 0.2rem 0; color: var(--muted); }
 
-      .timeline .item { border-left: 2px solid #392d65; padding: 0.2rem 0 0.6rem 0.85rem; margin-left: 0.35rem; }
-      .timeline .item h3 { margin: 0; }
-      .timeline .item p { margin: 0.2rem 0 0; color: var(--muted); }
-      .focus-link { display: inline-block; margin-top: 0.45rem; font-size: 0.86rem; }
+      h1 {
+        margin-top: 1rem;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        font-size: clamp(2.7rem, 5vw, 5rem);
+        line-height: 0.98;
+        max-width: 10ch;
+      }
 
-      .tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.6rem 0 0.8rem; }
-      .tab {
-        border: 1px solid var(--line);
-        background: #120d22;
+      .lede {
+        max-width: 62ch;
+        margin: 1.2rem 0 0;
         color: var(--muted);
-        border-radius: 999px;
-        padding: 0.34rem 0.78rem;
-        cursor: pointer;
-        font-weight: 600;
+        font-size: 1.04rem;
+        line-height: 1.82;
       }
-      .tab.active { color: var(--text); background: #261b46; }
 
-      .contact {
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        background: var(--panel-soft);
-        padding: 1rem;
+      .hero-actions,
+      .hero-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
       }
-      .footer {
+
+      .hero-actions {
         margin-top: 1.5rem;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        padding: 1rem 0 2rem;
       }
-      @media (max-width: 900px) {
-        .hero { grid-template-columns: 1fr; }
-        .nav { height: auto; padding: 0.8rem 0; flex-direction: column; gap: 0.6rem; }
-        .menu { flex-wrap: wrap; justify-content: center; }
+
+      .button,
+      .button-ghost {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0.7rem 1rem;
+        border-radius: 999px;
+        font-weight: 700;
+      }
+
+      .button {
+        background: var(--accent-strong);
+        color: #f7fbfb;
+      }
+
+      .button-ghost {
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+
+      .hero-links {
+        margin-top: 2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .hero-links span {
+        color: var(--ink);
+      }
+
+      .hero-aside {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .portrait {
+        min-height: 100%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .portrait::before {
+        content: "";
+        position: absolute;
+        inset: auto -10% -25% 35%;
+        height: 230px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(13, 92, 99, 0.18), transparent 70%);
+      }
+
+      .portrait-badge,
+      .metric,
+      .chip {
+        position: relative;
+        z-index: 1;
+      }
+
+      .portrait-badge {
+        width: 84px;
+        height: 84px;
+        border-radius: 24px;
+        background: linear-gradient(135deg, #113f50, #0d5c63);
+        color: #f4f7f7;
+        display: grid;
+        place-items: center;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        font-size: 2rem;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+      }
+
+      .portrait-copy h2 {
+        margin-top: 4rem;
+        font-size: 1.35rem;
+      }
+
+      .portrait-copy p {
+        margin: 0.65rem 0 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .metrics {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .metric {
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--card);
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.5rem;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+      }
+
+      .metric span {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.55;
+      }
+
+      section {
+        padding: 1rem 0;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .section-title {
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        font-size: clamp(2rem, 3vw, 2.8rem);
+        line-height: 1;
+      }
+
+      .section-note {
+        max-width: 34rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .about-grid,
+      .focus-grid,
+      .project-grid,
+      .timeline,
+      .publication-grid,
+      .contact-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .focus-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .project-grid,
+      .publication-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card {
+        padding: 1.4rem;
+      }
+
+      .card p,
+      .card li {
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      .feature-label {
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .card-title {
+        margin-top: 0.7rem;
+        font-size: 1.2rem;
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0.4rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: var(--accent-soft);
+        color: var(--accent-strong);
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .timeline {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .timeline-card {
+        padding: 1.5rem;
+        position: relative;
+      }
+
+      .timeline-card::before {
+        content: "";
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: 0 0 0 8px rgba(13, 92, 99, 0.12);
+      }
+
+      .timeline-copy {
+        padding-left: 1.5rem;
+      }
+
+      .timeline-copy p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .timeline-meta {
+        color: var(--accent);
+        font-size: 0.83rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .link-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+
+      .link-row a {
+        color: var(--accent-strong);
+        font-weight: 700;
+      }
+
+      .contact-panel {
+        padding: 1.6rem;
+      }
+
+      .contact-panel p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 2rem 0 3rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 980px) {
+        .hero,
+        .about-grid,
+        .focus-grid,
+        .project-grid,
+        .timeline,
+        .publication-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .topbar-inner,
+        .footer,
+        .section-head {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        h1 {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100% - 1rem, 1140px);
+        }
+
+        .hero-copy,
+        .portrait,
+        .card,
+        .contact-panel {
+          padding: 1.2rem;
+          border-radius: 22px;
+        }
+
+        .metrics {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
-    <header class="nav-wrap">
-      <nav class="nav container">
-        <a class="brand" href="#home">Thanh Tran<span>, PhD</span></a>
-        <div class="menu">
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="#home" aria-label="Thanh Tran home">
+          <span class="brand-mark">Thanh Tran</span>
+          <span class="brand-note">Principal Data Scientist &amp; AI Engineer</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
+          <a href="#focus">Focus</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <main class="container" id="home">
-      <section class="hero">
-        <div>
-          <div class="kicker">Principal Data Scientist · AI Engineer</div>
-          <h1>Building practical AI systems with research depth.</h1>
-          <p class="lead">
-            I lead end-to-end analytics and AI delivery — from strategy and experimentation
-            to production deployment — across multimodal ML, graph learning, and GenAI.
+    <main class="shell" id="home">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="panel hero-copy">
+          <div class="eyebrow">Brisbane, Australia</div>
+          <h1 id="intro-title">Applied AI with research depth and delivery discipline.</h1>
+          <p class="lede">
+            I build AI systems that survive contact with production: multimodal models,
+            decision-support workflows, and analytics platforms that help teams move from
+            experimentation to operational use with clear business value.
           </p>
-          <div class="cta">
-            <a class="btn primary" href="mailto:t.tranvo187@gmail.com">Contact</a>
-            <a class="btn" href="https://www.linkedin.com/in/thanhvtr" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn" href="/">Website</a>
+          <div class="hero-actions">
+            <a class="button" href="mailto:t.tranvo187@gmail.com">Get in touch</a>
+            <a class="button-ghost" href="#projects">View selected work</a>
+          </div>
+          <div class="hero-links">
+            <span>LinkedIn:</span>
+            <a href="https://www.linkedin.com/in/thanhvtr" target="_blank" rel="noreferrer">/in/thanhvtr</a>
+            <span>Email:</span>
+            <a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a>
           </div>
         </div>
-        <aside class="summary">
-          <h3>At a glance</h3>
-          <p>Brisbane-based data/AI leader with a PhD in multimodal deep learning.</p>
-          <p>Focus: deployable AI for real-world decisions, not research-only prototypes.</p>
-          <div class="chips">
-            <span class="chip">Multimodal ML</span>
-            <span class="chip">Graph AI</span>
-            <span class="chip">LLM Workflows</span>
+
+        <aside class="hero-aside">
+          <div class="panel portrait">
+            <div class="portrait-badge" aria-hidden="true">TT</div>
+            <div class="portrait-copy">
+              <h2>Thanh Tran, PhD</h2>
+              <p>
+                Principal data scientist and AI engineer focused on multimodal learning,
+                graph-aware modeling, GenAI systems, and translating complex research into
+                dependable tools for decision-makers.
+              </p>
+            </div>
+            <div class="metrics">
+              <div class="metric">
+                <strong>10+</strong>
+                <span>Years across research, teaching, and applied analytics delivery</span>
+              </div>
+              <div class="metric">
+                <strong>PhD</strong>
+                <span>Deep learning and multimodal AI with a production-first lens</span>
+              </div>
+            </div>
           </div>
         </aside>
       </section>
 
       <section id="about">
-        <h2 class="section-title">About</h2>
-        <div class="card">
-          <p class="muted">
-            Senior analytics and AI leader with delivery experience across public-sector transport,
-            academia, and enterprise transformation programs.
+        <div class="section-head">
+          <div>
+            <p class="feature-label">About</p>
+            <h2 class="section-title">Built for real operating environments.</h2>
+          </div>
+          <p class="section-note">
+            The strongest AI work is not a demo. It is reliable under messy data,
+            stakeholder constraints, and long feedback loops. That is the kind of work I optimize for.
           </p>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3 class="card-title">Current direction</h3>
+            <p>
+              Leading analytics and AI initiatives that combine technical rigor, stakeholder
+              alignment, and delivery accountability across research-heavy and operational contexts.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">What I bring</h3>
+            <p>
+              End-to-end thinking across problem framing, modeling, evaluation, deployment,
+              and communication with the people who need to trust the result.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <p class="muted">Open each role in a focused view (new tab) to showcase more details and outcomes.</p>
-        <div class="timeline">
-          <article class="item">
-            <h3>Senior Principal, Data Analytics</h3>
-            <p>The University of Queensland · Feb 2026 – Present</p>
-            <a class="focus-link" href="./experience-showcase.html#senior-principal" target="_blank" rel="noreferrer">Open role showcase ↗</a>
+      <section id="focus">
+        <div class="section-head">
+          <div>
+            <p class="feature-label">Focus Areas</p>
+            <h2 class="section-title">Where I spend my time.</h2>
+          </div>
+        </div>
+        <div class="focus-grid">
+          <article class="card">
+            <h3 class="card-title">Multimodal AI</h3>
+            <p>Vision, text, graph, and structured-data pipelines that improve decision quality.</p>
+            <div class="chip-row">
+              <span class="chip">Computer Vision</span>
+              <span class="chip">Fusion Models</span>
+              <span class="chip">Deep Learning</span>
+            </div>
           </article>
-          <article class="item">
-            <h3>Data Scientist</h3>
-            <p>Department for Infrastructure and Transport · Jun 2024 – Jan 2026</p>
-            <a class="focus-link" href="./experience-showcase.html#data-scientist" target="_blank" rel="noreferrer">Open role showcase ↗</a>
+          <article class="card">
+            <h3 class="card-title">Decision Intelligence</h3>
+            <p>Systems designed for policy, operations, and triage where explainability matters.</p>
+            <div class="chip-row">
+              <span class="chip">Forecasting</span>
+              <span class="chip">Risk Scoring</span>
+              <span class="chip">Operational Analytics</span>
+            </div>
           </article>
-          <article class="item">
-            <h3>Machine Learning Instructor / TA</h3>
-            <p>The University of Queensland · Feb 2021 – Aug 2024</p>
-            <a class="focus-link" href="./experience-showcase.html#ml-instructor" target="_blank" rel="noreferrer">Open role showcase ↗</a>
+          <article class="card">
+            <h3 class="card-title">LLM Workflows</h3>
+            <p>Retrieval-assisted assistants and workflow automation with guardrails and traceability.</p>
+            <div class="chip-row">
+              <span class="chip">RAG</span>
+              <span class="chip">Prompt Systems</span>
+              <span class="chip">Evaluation</span>
+            </div>
           </article>
         </div>
       </section>
 
       <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <p class="muted">Each project opens a focused showcase in a new tab for employer/client review.</p>
-        <div class="grid">
+        <div class="section-head">
+          <div>
+            <p class="feature-label">Selected Projects</p>
+            <h2 class="section-title">A few representative builds.</h2>
+          </div>
+          <p class="section-note">
+            The reference site uses concise featured cards; this keeps the same pattern but with your own content and stronger narrative framing.
+          </p>
+        </div>
+        <div class="project-grid">
           <article class="card">
-            <h3>Traffic Incident Intelligence</h3>
-            <p>Graph + multimodal models for risk forecasting and operational triage.</p>
-            <p><a href="./project-showcase.html#traffic-intelligence" target="_blank" rel="noreferrer">Open project showcase ↗</a></p>
+            <p class="feature-label">Featured</p>
+            <h3 class="card-title">Traffic Incident Intelligence</h3>
+            <p>
+              Multimodal and graph-informed forecasting for incident risk, prioritization,
+              and response planning in transport operations.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Graph AI</span>
+              <span class="chip">Multimodal ML</span>
+              <span class="chip">Prediction</span>
+            </div>
+            <div class="link-row">
+              <a href="./project-showcase.html#traffic-intelligence">Open case study</a>
+            </div>
           </article>
           <article class="card">
-            <h3>LLM Decision Copilot</h3>
-            <p>Retrieval-assisted assistant for policy drafting and domain Q&A.</p>
-            <p><a href="./project-showcase.html#llm-copilot" target="_blank" rel="noreferrer">Open project showcase ↗</a></p>
+            <p class="feature-label">Featured</p>
+            <h3 class="card-title">LLM Decision Copilot</h3>
+            <p>
+              A retrieval-assisted assistant designed for policy drafting, structured Q&amp;A,
+              and trustworthy access to domain knowledge.
+            </p>
+            <div class="chip-row">
+              <span class="chip">GenAI</span>
+              <span class="chip">RAG</span>
+              <span class="chip">Knowledge Systems</span>
+            </div>
+            <div class="link-row">
+              <a href="./project-showcase.html#llm-copilot">Open case study</a>
+            </div>
           </article>
           <article class="card">
-            <h3>More case studies</h3>
-            <p>Additional portfolio write-ups and demos coming soon.</p>
-            <p><a href="./project-showcase.html#coming-soon" target="_blank" rel="noreferrer">Open roadmap showcase ↗</a></p>
+            <p class="feature-label">Roadmap</p>
+            <h3 class="card-title">Portfolio Expansion</h3>
+            <p>
+              Additional write-ups can cover graph reasoning, multimodal research outcomes,
+              and production analytics systems with stronger employer-facing evidence.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Case Studies</span>
+              <span class="chip">Architecture</span>
+              <span class="chip">Impact</span>
+            </div>
+            <div class="link-row">
+              <a href="./project-showcase.html#coming-soon">Open roadmap</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-head">
+          <div>
+            <p class="feature-label">Experience</p>
+            <h2 class="section-title">Recent roles.</h2>
+          </div>
+          <p class="section-note">
+            Each role links out to a focused detail page so you can keep this homepage concise.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="card timeline-card">
+            <div class="timeline-copy">
+              <p class="timeline-meta">2026 - Present</p>
+              <h3 class="card-title">Senior Principal, Data Analytics</h3>
+              <p>The University of Queensland</p>
+              <div class="link-row">
+                <a href="./experience-showcase.html#senior-principal">Open role details</a>
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-card">
+            <div class="timeline-copy">
+              <p class="timeline-meta">2024 - 2026</p>
+              <h3 class="card-title">Data Scientist</h3>
+              <p>Department for Infrastructure and Transport</p>
+              <div class="link-row">
+                <a href="./experience-showcase.html#data-scientist">Open role details</a>
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-card">
+            <div class="timeline-copy">
+              <p class="timeline-meta">2021 - 2024</p>
+              <h3 class="card-title">Machine Learning Instructor / TA</h3>
+              <p>The University of Queensland</p>
+              <div class="link-row">
+                <a href="./experience-showcase.html#ml-instructor">Open role details</a>
+              </div>
+            </div>
           </article>
         </div>
       </section>
 
       <section id="publications">
-        <h2 class="section-title">Publications (Employer Showcase)</h2>
-        <p class="muted">Each paper includes a practical relevance angle for clients/employers.</p>
-        <div class="tabs">
-          <button class="tab active" data-cat="all">All</button>
-          <button class="tab" data-cat="transport">Transport AI</button>
-          <button class="tab" data-cat="methods">Methods</button>
+        <div class="section-head">
+          <div>
+            <p class="feature-label">Publications</p>
+            <h2 class="section-title">Research and communication.</h2>
+          </div>
         </div>
-        <div class="grid" id="pub-grid"></div>
+        <div class="publication-grid">
+          <article class="card">
+            <h3 class="card-title">Multimodal AI Research</h3>
+            <p>
+              Use this space for papers or thesis outputs that show the technical depth behind your applied work.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Industry Translation</h3>
+            <p>
+              Highlight writing that turns complex modeling into something operational leaders can act on.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Teaching and Mentorship</h3>
+            <p>
+              Add lectures, workshops, or curriculum material that demonstrates your ability to explain hard problems clearly.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact">
-          <p class="muted">Brisbane, Australia · <a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a></p>
+        <div class="section-head">
+          <div>
+            <p class="feature-label">Contact</p>
+            <h2 class="section-title">Open to serious AI and analytics work.</h2>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-panel">
+            <h3 class="card-title">Start a conversation</h3>
+            <p>
+              For leadership roles, applied AI engagements, or research-informed product work,
+              email is the cleanest path.
+            </p>
+            <div class="link-row">
+              <a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-panel">
+            <h3 class="card-title">Elsewhere</h3>
+            <p>
+              Keep social links focused and intentional. One strong professional profile is enough here.
+            </p>
+            <div class="link-row">
+              <a href="https://www.linkedin.com/in/thanhvtr" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </section>
-
-      <footer class="footer">© 2026 Thanh Tran, PhD · Principal Data Scientist & AI Engineer</footer>
     </main>
 
+    <footer class="shell footer">
+      <span>© <span id="year"></span> Thanh Tran</span>
+      <span>Static HTML portfolio, rebuilt in the style of a modern single-page personal site.</span>
+    </footer>
+
     <script>
-      const papers = [
-        {
-          title: "M2NN: A multimodal mobility neural network framework",
-          venue: "Transportation Research Part C (2025)",
-          cat: "transport",
-          link: "https://www.sciencedirect.com/science/article/pii/S0968090X25004620",
-          impact: "Scalable multimodal traffic prediction for planning and operations."
-        },
-        {
-          title: "MSGNN: A multimodal urban traffic speed prediction model",
-          venue: "Transportation Research Part C (2023)",
-          cat: "transport",
-          link: "https://www.sciencedirect.com/science/article/pii/S0968090X23003698",
-          impact: "Improves congestion forecasting for proactive decision support."
-        },
-        {
-          title: "Trajectory-user linking with a deep neural network",
-          venue: "Australasian Transport Research Forum (2023)",
-          cat: "methods",
-          link: "https://www.australasiantransportresearchforum.org.au/wp-content/uploads/2023/09/ATRF_2023_Paper_43.pdf",
-          impact: "Representation learning for mobility behavior intelligence use-cases."
-        },
-        {
-          title: "Online traffic incident prediction with hybrid graph continual learning",
-          venue: "Australasian Transport Research Forum (2022)",
-          cat: "transport",
-          link: "https://trid.trb.org/View/2259782",
-          impact: "Deployable continual-learning approach for incident early warning."
-        }
-      ];
-
-      const grid = document.getElementById("pub-grid");
-      const tabs = [...document.querySelectorAll(".tab")];
-
-      function render(cat = "all") {
-        const list = cat === "all" ? papers : papers.filter((p) => p.cat === cat);
-        grid.innerHTML = list
-          .map(
-            (p) => `
-              <article class="card">
-                <h3>${p.title}</h3>
-                <p>${p.venue}</p>
-                <p>${p.impact}</p>
-                <p><a href="${p.link}" target="_blank" rel="noreferrer">Read publication</a></p>
-              </article>`
-          )
-          .join("");
-      }
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => t.classList.remove("active"));
-          tab.classList.add("active");
-          render(tab.dataset.cat);
-        });
-      });
-
-      render();
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
