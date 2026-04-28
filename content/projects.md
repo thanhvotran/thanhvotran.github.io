@@ -3,7 +3,7 @@
 
 # Selected AI and analytics work.
 
-<p class="lede">These case studies are written from public research outputs and role context, so the claims stay grounded while still showing the technical shape of the work.</p>
+<p class="lede"></p>
 </section>
 
 <section id="state-wide-data-products" class="project">

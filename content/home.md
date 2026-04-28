@@ -76,7 +76,7 @@
 <p class="eyebrow">Experience</p>
 ## Recent roles.
 </div>
-<p>Role details are kept on a separate Markdown-backed page so the landing page stays focused.</p>
+<p>Role details are kept on a separate page</p>
 </div>
 <div class="timeline">
 <article class="role"><p class="meta">Feb 2026 - Present</p><h3>Senior Principal, Data Analytics</h3><p>The University of Queensland</p><p class="links"><a href="./experience-showcase.html#senior-principal-data-analytics">Open role details</a></p></article>
