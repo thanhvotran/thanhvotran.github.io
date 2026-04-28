@@ -3,15 +3,16 @@
 
 # Selected AI and analytics work.
 
-<p class="lede"></p>
+<p class="lede">A mix of BI delivery, AI validation, and research-backed modelling work carried over from the older portfolio and updated to reflect the current resume.</p>
 </section>
 
 <section id="state-wide-data-products" class="project">
 ## State-wide Data Products
 <p class="meta">Applied Analytics</p>
-<div class="tags"><span class="tag">Customer Analytics</span><span class="tag">Operational Data</span><span class="tag">Decision Products</span></div>
+<div class="tags"><span class="tag">Power BI</span><span class="tag">Athena</span><span class="tag">Decision Products</span></div>
 
-- Built analytics across large-scale operational, customer, public transport survey, ticketing, and event-level datasets.
+- Delivered interactive KPI dashboards in Power BI and Streamlit for forecasting and planning use cases.
+- Fed reporting from AWS SageMaker, S3, and Athena pipelines over large ticketing and telemetry datasets.
 - Worked across different grains of evidence, from state-wide summaries to minute-level patterns and detailed operational slices.
 - Turned complex data into reporting and decision-support outputs for planning, policy, and operational use.
 </section>
@@ -19,10 +20,11 @@
 <section id="ai-camera-validation-analytics" class="project">
 ## AI Camera Validation Analytics
 <p class="meta">Applied AI</p>
-<div class="tags"><span class="tag">Computer Vision</span><span class="tag">AI Validation</span><span class="tag">Video Analytics</span></div>
+<div class="tags"><span class="tag">Computer Vision</span><span class="tag">AI Validation</span><span class="tag">Operational Readiness</span></div>
 
-- Analysed AI camera outputs and video-derived evidence to support validation, quality assessment, and operational decisions.
-- Worked with fine-grained time frames, including second-level and frame-level evidence where model outputs needed careful interpretation.
+- Led end-to-end evaluation of freeway CCTV models for vehicle classification and counting.
+- Established baseline performance across day, night, and adverse-weather conditions to support operational use.
+- Analysed AI camera outputs and video-derived evidence at second-level and frame-level granularity where model outputs needed careful interpretation.
 - Connected model validation, analytics, and stakeholder communication so AI outputs could be used with appropriate confidence.
 </section>
 
@@ -40,12 +42,12 @@
 <p class="links"><a href="https://doi.org/10.1016/j.trc.2023.104354">MSGNN DOI</a> <a href="https://doi.org/10.1016/j.trc.2025.105458">M2NN DOI</a></p>
 </section>
 
-<section id="llm-decision-workflows" class="project">
-## LLM Decision Workflows
+<section id="multimodal-road-asset-grader" class="project">
+## Multimodal Road-Asset Grader
 <p class="meta">Applied AI</p>
-<div class="tags"><span class="tag">RAG</span><span class="tag">Prompt Systems</span><span class="tag">Evaluation</span></div>
+<div class="tags"><span class="tag">Transformers</span><span class="tag">LiDAR</span><span class="tag">Multimodal AI</span></div>
 
-- Designed retrieval-assisted workflows for turning complex policy, reporting, and domain documents into structured question-answering and drafting support.
-- Focused on practical controls: source traceability, repeatable outputs, and clear boundaries for human review.
-- Connects the same delivery pattern used in analytics work: define the decision, ground the evidence, evaluate the output, and make adoption manageable.
+- Prototyped a multimodal LLM-based grading workflow combining roadway imagery and LiDAR.
+- Designed to standardise defect scoring and reduce manual audit variability in road-asset assessment.
+- Built with a practical delivery mindset: clear outputs, reproducible steps, and alignment to field constraints.
 </section>
