@@ -44,7 +44,7 @@
 <p class="eyebrow">About</p>
 ## Know who I am.
 </div>
-<p>The reference portfolio uses a dedicated self-introduction block with stronger personality and clearer technical positioning. This version keeps that pattern, but grounds it in your actual analytics and research track record.</p>
+<p>Principal data scientist and AI engineer working across analytics, modelling, and decision support.</p>
 </div>
 <div class="split-grid">
 <article class="hero-summary">
@@ -73,7 +73,7 @@
 <p class="eyebrow">Professional Skillset</p>
 ## The interface from the reference repo, adapted to your work.
 </div>
-<p>Instead of a generic card list, this turns your capabilities into a tighter skills matrix closer to the GitHub template's skill and tools sections.</p>
+<p>Analytics engineering, applied machine learning, decision intelligence, cloud platforms, research, and communication.</p>
 </div>
 <div class="skill-grid">
 <article class="skill-tile"><strong>Analytics Engineering</strong><span>Scalable reporting layers, metric design, KPI logic, multi-source data pipelines, and stakeholder-ready dashboards.</span></article>
@@ -147,7 +147,7 @@
 <p class="eyebrow">Experience</p>
 ## Roles with technical and organisational range.
 </div>
-<p>The homepage keeps the summaries short and routes deeper detail into the separate experience page.</p>
+<p>Summaries stay brief here, with deeper role detail on the experience page.</p>
 </div>
 <div class="timeline">
 <article class="role"><p class="meta">Feb 2026 - Present</p><h3>Senior Principal Data Analyst</h3><p>The University of Queensland</p><p class="links"><a href="./experience-showcase.html#senior-principal">Open role details</a></p></article>
@@ -162,7 +162,7 @@
 <p class="eyebrow">Public Research</p>
 ## Papers, talks, and visible technical work.
 </div>
-<p>Publications remain a separate pillar because they differentiate your portfolio from a generic engineering template.</p>
+<p>Public research is listed separately so the papers are easy to scan and open.</p>
 </div>
 <div class="publication-grid">
 <article class="publication"><h3>M2NN: Multi-view multi-task graph neural network</h3><p>Transportation Research Part C, 2026. Public open-access article on multimodal incident forecasting with congestion heatmap imagery.</p><p class="links"><a href="https://doi.org/10.1016/j.trc.2025.105458">DOI</a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25004620">Article</a></p></article>

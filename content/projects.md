@@ -3,7 +3,7 @@
 
 # Selected AI and analytics work.
 
-<p class="lede">A mix of BI delivery, AI validation, and research-backed modelling work carried over from the older portfolio and updated to reflect the current resume.</p>
+<p class="lede">A concise view of applied analytics, AI validation, and research-backed modelling work.</p>
 </section>
 
 <section id="state-wide-data-products" class="project">
