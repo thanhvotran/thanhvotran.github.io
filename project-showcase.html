@@ -3,167 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Showcase | Thanh Tran</title>
-    <style>
-      :root {
-        --bg: #f3efe6;
-        --paper: rgba(255, 252, 247, 0.9);
-        --ink: #18212b;
-        --muted: #576474;
-        --line: rgba(24, 33, 43, 0.14);
-        --accent: #0d5c63;
-        --shadow: 0 20px 55px rgba(24, 33, 43, 0.08);
-      }
-
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at right top, rgba(204, 152, 83, 0.12), transparent 24%),
-          linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
-        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
-      }
-
-      a { color: var(--accent); text-decoration: none; }
-
-      .wrap {
-        width: min(980px, calc(100% - 2rem));
-        margin: 0 auto;
-        padding: 2rem 0 3rem;
-      }
-
-      .back {
-        display: inline-flex;
-        margin-bottom: 1.25rem;
-        font-weight: 700;
-      }
-
-      .hero,
-      .project {
-        border: 1px solid var(--line);
-        border-radius: 28px;
-        background: var(--paper);
-        box-shadow: var(--shadow);
-      }
-
-      .hero {
-        padding: 1.8rem;
-        margin-bottom: 1rem;
-      }
-
-      h1,
-      h2 {
-        margin: 0;
-        font-family: "Iowan Old Style", "Palatino Linotype", serif;
-      }
-
-      h1 {
-        font-size: clamp(2.4rem, 5vw, 4rem);
-        line-height: 1;
-      }
-
-      .hero p,
-      .project p,
-      .project li {
-        color: var(--muted);
-        line-height: 1.75;
-      }
-
-      .eyebrow {
-        color: var(--accent);
-        text-transform: uppercase;
-        letter-spacing: 0.16em;
-        font-size: 0.78rem;
-        font-weight: 700;
-      }
-
-      .project {
-        padding: 1.5rem;
-        margin-top: 1rem;
-      }
-
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 1rem 0;
-      }
-
-      .tag {
-        display: inline-flex;
-        align-items: center;
-        min-height: 34px;
-        padding: 0.4rem 0.75rem;
-        border-radius: 999px;
-        border: 1px solid var(--line);
-        color: var(--accent);
-        font-size: 0.82rem;
-        font-weight: 700;
-        background: rgba(13, 92, 99, 0.08);
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 1.1rem;
-      }
-    </style>
+    <title>Projects | Thanh Tran</title>
+    <meta name="description" content="Selected AI, data science, and analytics projects by Thanh Tran." />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="wrap">
-      <a class="back" href="./index.html#projects">← Back to portfolio</a>
-
-      <section class="hero">
-        <p class="eyebrow">Project Showcase</p>
-        <h1>Selected case studies with room for stronger evidence.</h1>
-        <p>
-          These pages are positioned for employer review. Add diagrams, screenshots, links,
-          and hard metrics as you refine the underlying portfolio story.
-        </p>
-      </section>
-
-      <section id="traffic-intelligence" class="project">
-        <h2>Traffic Incident Intelligence</h2>
-        <div class="tags">
-          <span class="tag">Graph AI</span>
-          <span class="tag">Multimodal</span>
-          <span class="tag">Prediction</span>
-        </div>
-        <ul>
-          <li>Designed a forecasting pipeline for incident risk, prioritization, and operational triage.</li>
-          <li>Combined technical modeling choices with the needs of frontline decision-makers.</li>
-          <li>Add evidence here: data scale, prediction horizon, baseline lift, and deployment context.</li>
-        </ul>
-      </section>
-
-      <section id="llm-copilot" class="project">
-        <h2>LLM Decision Copilot</h2>
-        <div class="tags">
-          <span class="tag">GenAI</span>
-          <span class="tag">RAG</span>
-          <span class="tag">Knowledge Assist</span>
-        </div>
-        <ul>
-          <li>Built a retrieval-assisted workflow for policy drafting and expert question answering.</li>
-          <li>Focused on trust, traceability, and practical usefulness for business users.</li>
-          <li>Add architecture detail here: retrieval strategy, guardrails, evaluation, and adoption signals.</li>
-        </ul>
-      </section>
-
-      <section id="coming-soon" class="project">
-        <h2>Roadmap / Additional Case Studies</h2>
-        <div class="tags">
-          <span class="tag">Vision</span>
-          <span class="tag">Graph Reasoning</span>
-          <span class="tag">GenAI Systems</span>
-        </div>
-        <ul>
-          <li>Computer vision and multimodal analytics portfolio entry.</li>
-          <li>LLM plus graph hybrid reasoning portfolio entry.</li>
-          <li>Production analytics platform entry with architecture and business impact.</li>
-        </ul>
-      </section>
+    <main class="shell markdown-page detail-page">
+      <a class="back" href="./index.html#projects">Back to portfolio</a>
+      <article id="content" data-md="./content/projects.md">
+        <p class="loading">Loading projects...</p>
+      </article>
     </main>
+    <script src="./content-loader.js"></script>
   </body>
 </html>
