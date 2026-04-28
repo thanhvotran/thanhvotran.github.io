@@ -2,9 +2,9 @@
 <div class="panel hero-copy">
 <p class="eyebrow">Brisbane, Australia</p>
 
-# Applied AI for transport, operations, and decision support.
+# Principal Data Scientist and AI Engineer.
 
-<p class="lede">I am a data scientist and AI engineer with a PhD in deep learning for intelligent transportation systems. My work spans graph neural networks, multimodal modelling, traffic incident prediction, generative AI workflows, and analytics products that turn research into usable decisions.</p>
+<p class="lede">I build AI and analytics systems for complex, high-volume data environments. My work spans multimodal deep learning, graph neural networks, computer vision validation analytics, generative AI workflows, large-scale behavioural and operational data, and decision products that turn evidence into action.</p>
 
 <div class="actions">
 <a class="button" href="mailto:t.tranvo187@gmail.com">Get in touch</a>
@@ -18,10 +18,10 @@
 <aside class="panel profile-panel">
 <div class="initials">TT</div>
 <h2>Thanh Tran, PhD</h2>
-<p>Research-trained builder focused on production-minded AI: from model design and evaluation to stakeholder-facing analytics, teaching, and applied delivery.</p>
+<p>Research-trained AI practitioner focused on production-minded modelling, rigorous evaluation, stakeholder-facing analytics, and applied delivery across domains.</p>
 <div class="metric-grid">
-<div class="metric"><strong>PhD</strong><span>Deep learning and intelligent transportation systems</span></div>
-<div class="metric"><strong>GNN</strong><span>Graph, multimodal, and spatiotemporal modelling</span></div>
+<div class="metric"><strong>PhD</strong><span>Multimodal deep learning</span></div>
+<div class="metric"><strong>Scale</strong><span>State-wide data, minute-level events, second-level video analytics</span></div>
 </div>
 </aside>
 </section>
@@ -32,12 +32,12 @@
 <p class="eyebrow">About</p>
 ## Research depth with delivery discipline.
 </div>
-<p>I work best where modelling choices have operational consequences: incident response, transport systems, policy support, analytics platforms, and AI workflows that need to be trusted by non-technical users.</p>
+<p>I work best where modelling choices have operational consequences: policy support, customer analytics, operational intelligence, AI validation, reporting platforms, and workflows that need to be trusted by non-technical users.</p>
 </div>
 <div class="card-grid">
 <article class="card"><h3>Current Direction</h3><p>Leading data analytics work at The University of Queensland, with a focus on decision intelligence, robust reporting, and practical AI adoption.</p></article>
-<article class="card"><h3>Research Foundation</h3><p>Published open-access work on graph neural networks and multimodal traffic incident prediction in Transportation Research Part C.</p></article>
-<article class="card"><h3>Communication</h3><p>Experience teaching machine learning, software engineering, algorithms, and transport engineering across university courses and applied settings.</p></article>
+<article class="card"><h3>Research Foundation</h3><p>PhD research in multimodal deep learning, with open-access publications on graph neural networks, spatiotemporal modelling, and real-time prediction.</p></article>
+<article class="card"><h3>Applied Breadth</h3><p>Experience across operational, customer, survey, ticketing, sensor, and video-derived data for analytics and AI-supported decision making.</p></article>
 </div>
 </section>
 
@@ -49,9 +49,9 @@
 </div>
 </div>
 <div class="card-grid">
-<article class="card"><h3>Graph and Multimodal AI</h3><p>GNN, CNN, RNN, map imagery, sensor data, and structured network features for spatiotemporal prediction.</p><div class="tags"><span class="tag">GNN</span><span class="tag">Computer Vision</span><span class="tag">Traffic AI</span></div></article>
-<article class="card"><h3>Decision Intelligence</h3><p>Analytics systems for prioritisation, risk scoring, forecasting, and operational reporting where context and explainability matter.</p><div class="tags"><span class="tag">Forecasting</span><span class="tag">Risk</span><span class="tag">BI</span></div></article>
-<article class="card"><h3>Generative AI Workflows</h3><p>Retrieval-assisted assistants, policy drafting support, prompt workflows, and evaluation patterns for responsible workplace use.</p><div class="tags"><span class="tag">RAG</span><span class="tag">LLM</span><span class="tag">Evaluation</span></div></article>
+<article class="card"><h3>Multimodal AI</h3><p>Deep learning across structured records, images, video-derived signals, sensor streams, and graph/network data.</p><div class="tags"><span class="tag">Deep Learning</span><span class="tag">Computer Vision</span><span class="tag">GNN</span></div></article>
+<article class="card"><h3>Large-scale Analytics</h3><p>State-wide, high-granularity data products across customer behaviour, operations, surveys, ticketing, events, and reporting.</p><div class="tags"><span class="tag">Forecasting</span><span class="tag">BI</span><span class="tag">Data Products</span></div></article>
+<article class="card"><h3>Decision Intelligence</h3><p>AI and analytics workflows for prioritisation, validation, policy support, risk scoring, and executive-ready evidence.</p><div class="tags"><span class="tag">GenAI</span><span class="tag">Evaluation</span><span class="tag">Decision Support</span></div></article>
 </div>
 </section>
 
@@ -61,12 +61,12 @@
 <p class="eyebrow">Selected Projects</p>
 ## Representative builds.
 </div>
-<p>These examples connect the research record with applied analytics and delivery work.</p>
+<p>These examples connect research depth with applied analytics, AI validation, and delivery work.</p>
 </div>
 <div class="project-grid">
-<article class="project"><p class="meta">Research</p><h3>Network-wide Traffic Incident Prediction</h3><p>A multi-structured graph neural network for predicting incident risk across large traffic networks using heterogeneous data sources.</p><div class="tags"><span class="tag">Graph AI</span><span class="tag">Transport</span><span class="tag">Open Access</span></div><p class="links"><a href="./project-showcase.html#traffic-incident-prediction">Open case study</a></p></article>
-<article class="project"><p class="meta">Research</p><h3>Multimodal Incident Forecasting</h3><p>A multi-view, multi-task framework combining traffic sensor data with congestion heatmap imagery for scalable incident forecasting.</p><div class="tags"><span class="tag">Multimodal</span><span class="tag">GNN</span><span class="tag">CNN</span></div><p class="links"><a href="./project-showcase.html#multimodal-incident-forecasting">Open case study</a></p></article>
-<article class="project"><p class="meta">Applied AI</p><h3>LLM Decision Workflows</h3><p>Retrieval and drafting workflows for structured Q&A, document interpretation, and repeatable decision support.</p><div class="tags"><span class="tag">GenAI</span><span class="tag">RAG</span><span class="tag">Workflow</span></div><p class="links"><a href="./project-showcase.html#llm-decision-workflows">Open case study</a></p></article>
+<article class="project"><p class="meta">Applied Analytics</p><h3>State-wide Data Products</h3><p>Analytics across large operational, customer, survey, ticketing, and event-level datasets to support planning and decision making.</p><div class="tags"><span class="tag">Customer Data</span><span class="tag">Operations</span><span class="tag">BI</span></div><p class="links"><a href="./project-showcase.html#state-wide-data-products">Open case study</a></p></article>
+<article class="project"><p class="meta">Applied AI</p><h3>AI Camera Validation Analytics</h3><p>Decision analytics for video-derived AI camera outputs, working at fine time granularity down to seconds and frame-level evidence.</p><div class="tags"><span class="tag">Computer Vision</span><span class="tag">Validation</span><span class="tag">Decision Support</span></div><p class="links"><a href="./project-showcase.html#ai-camera-validation-analytics">Open case study</a></p></article>
+<article class="project"><p class="meta">Research</p><h3>Multimodal Deep Learning Research</h3><p>Graph and multimodal models for real-time prediction across complex spatiotemporal systems.</p><div class="tags"><span class="tag">Multimodal</span><span class="tag">GNN</span><span class="tag">Open Access</span></div><p class="links"><a href="./project-showcase.html#multimodal-deep-learning-research">Open case study</a></p></article>
 </div>
 </section>
 
