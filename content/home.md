@@ -71,7 +71,7 @@
 <div class="section-head">
 <div>
 <p class="eyebrow">Professional Skillset</p>
-## The interface from the reference repo, adapted to your work.
+## Core capabilities.
 </div>
 <p>Analytics engineering, applied machine learning, decision intelligence, cloud platforms, research, and communication.</p>
 </div>
@@ -114,7 +114,7 @@
 <p class="eyebrow">Recent Works</p>
 ## Selected projects and case studies.
 </div>
-<p>The reference repo leans heavily on prominent project cards. Here, that same pattern is mapped to your strongest public and employer-facing work.</p>
+<p>Selected work across applied analytics, AI validation, and public research.</p>
 </div>
 <div class="project-grid">
 <article class="project">
@@ -147,7 +147,7 @@
 <p class="eyebrow">Experience</p>
 ## Roles with technical and organisational range.
 </div>
-<p>Summaries stay brief here, with deeper role detail on the experience page.</p>
+<p>Recent roles across analytics leadership, applied machine learning, and doctoral research.</p>
 </div>
 <div class="timeline">
 <article class="role"><p class="meta">Feb 2026 - Present</p><h3>Senior Principal Data Analyst</h3><p>The University of Queensland</p><p class="links"><a href="./experience-showcase.html#senior-principal">Open role details</a></p></article>
@@ -162,7 +162,7 @@
 <p class="eyebrow">Public Research</p>
 ## Papers, talks, and visible technical work.
 </div>
-<p>Public research is listed separately so the papers are easy to scan and open.</p>
+<p>Open-access papers and conference work across multimodal deep learning and real-time prediction.</p>
 </div>
 <div class="publication-grid">
 <article class="publication"><h3>M2NN: Multi-view multi-task graph neural network</h3><p>Transportation Research Part C, 2026. Public open-access article on multimodal incident forecasting with congestion heatmap imagery.</p><p class="links"><a href="https://doi.org/10.1016/j.trc.2025.105458">DOI</a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25004620">Article</a></p></article>
