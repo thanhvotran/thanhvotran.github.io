@@ -1,4 +1,4 @@
-# Thanh Tran
+# Thanh Tran, PhD
 
 Principal Data Scientist and AI Engineer with a PhD in multimodal deep learning, focused on building analytics and AI systems for high-volume operational environments.
 

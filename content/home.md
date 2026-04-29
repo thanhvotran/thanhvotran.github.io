@@ -2,7 +2,7 @@
 <div class="panel hero-copy">
 <p class="eyebrow">Brisbane, Australia</p>
 
-# Thanh Tran
+# Summary
 
 <p class="lede">Principal data scientist and AI engineer working across multimodal deep learning, decision-support analytics, KPI reporting, computer vision validation, and applied AI systems that hold up in production.</p>
 
