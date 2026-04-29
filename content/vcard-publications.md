@@ -43,3 +43,17 @@
 <div class="vcard-tags"><span class="vcard-tag">Conference</span><span class="vcard-tag">Australia</span><span class="vcard-tag">TRID Indexed</span></div>
 <p class="vcard-links"><a href="https://trid.trb.org/View/2259782">TRID Record</a><a href="https://australasiantransportresearchforum.org.au/papers/2022">Conference Proceedings</a></p>
 </div>
+
+<div class="vcard-card" id="atrf-perth-duration-mtl">
+<h3>Area-wide traffic incident duration prediction: a multi-task learning approach</h3>
+<p class="vcard-meta">CONFERENCE | ATRF | Perth, Western Australia, Australia</p>
+<div class="vcard-tags"><span class="vcard-tag">Conference</span><span class="vcard-tag">Australia</span><span class="vcard-tag">International Audience</span></div>
+<p class="vcard-links"><a href="https://australasiantransportresearchforum.org.au/area-wide-trafficincident-duration-prediction-a-multi-task-learning-approach/">Conference Paper Page</a></p>
+</div>
+
+<div class="vcard-card" id="trb-2023-msgnn">
+<h3>MSGNN: a multi-structured graph neural network model for real-time incident prediction in large traffic networks</h3>
+<p class="vcard-meta">CONFERENCE | Transportation Research Board (TRB) Annual Meeting | Washington, DC, United States | 8-12 January 2023</p>
+<div class="vcard-tags"><span class="vcard-tag">Conference</span><span class="vcard-tag">United States</span><span class="vcard-tag">International Conference</span></div>
+<p>Tran, Thanh; He, Dan; Kim, Jiwon; Hickman, Mark (2023).</p>
+</div>
