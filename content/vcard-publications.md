@@ -1,3 +1,7 @@
+Peer-reviewed research in multimodal learning, graph neural networks, uncertainty, and real-time prediction.
+
+<p class="vcard-links"><a href="https://scholar.google.com/citations?user=bks0rMYAAAAJ&amp;hl=en">View Google Scholar</a></p>
+
 ## Journal Articles
 
 <div class="vcard-card" id="m2nn">
