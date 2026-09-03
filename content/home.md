@@ -1,15 +1,15 @@
 <section class="hero" id="home">
 <div class="panel hero-copy">
-<p class="eyebrow">Brisbane, Australia</p>
+<p class="eyebrow">AI Assurance | Decision Intelligence | Enterprise Delivery</p>
 
-# Summary
+# Thanh Tran
 
-<p class="lede">Principal data scientist and AI engineer working across multimodal deep learning, decision-support analytics, KPI reporting, computer vision validation, and applied AI systems that hold up in production.</p>
+<p class="lede">Principal data scientist and AI leader in Brisbane, building dependable data and AI products from ambiguous problems through evaluation, delivery, and adoption.</p>
 
 <div class="actions">
-<a class="button" href="mailto:t.tranvo187@gmail.com">Contact me</a>
-<a class="button-ghost" href="./project-showcase.html">Project archive</a>
-<a class="button-ghost" href="./experience-showcase.html">Role history</a>
+<a class="button" href="mailto:t.tranvo187@gmail.com">Discuss a role</a>
+<a class="button-ghost" href="./project-showcase.html">Selected work</a>
+<a class="button-ghost" href="./experience-showcase.html">Experience</a>
 </div>
 
 <p class="links"><strong>Email:</strong> <a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/thanhvtr">/in/thanhvtr</a> <strong>GitHub:</strong> <a href="https://github.com/thanhvotran">/thanhvotran</a></p>
@@ -18,21 +18,21 @@
 <div class="hero-right">
 <aside class="panel profile-panel">
 <div class="initials">TT</div>
-<h2>Research depth. Delivery discipline.</h2>
-<p>I translate complex modelling, evaluation, and data engineering work into tools that leadership teams and operational users can actually trust. My background covers software engineering, doctoral AI research, public-sector analytics, and executive reporting.</p>
+<h2>From models to decisions.</h2>
+<p>I work across senior stakeholders, domain specialists, and delivery teams to turn data and AI into reliable operating capability. My focus is evaluation and assurance: defining what good looks like, testing real conditions, and building in traceability and human review.</p>
 <div class="metric-grid">
-<div class="metric"><strong>PhD</strong><span>Multi-modal deep learning for traffic incident prediction</span></div>
-<div class="metric"><strong>AWS + BI</strong><span>SageMaker, Athena, S3, Power BI, Streamlit, Python, SQL</span></div>
+<div class="metric"><strong>30%</strong><span>fewer routine transport modelling requests through self-serve AI</span></div>
+<div class="metric"><strong>5-10%</strong><span>improvement in production image quality at Shorthand</span></div>
 </div>
 </aside>
 
 <section class="social-band">
-<p class="mini-label">Find Me On</p>
-<h3>Public profiles and current work.</h3>
+<p class="mini-label">Profiles</p>
+<h3>Work, research, and professional history.</h3>
 <ul class="social-list">
 <li><a class="social-pill" href="https://github.com/thanhvotran"><span class="symbol">GH</span>GitHub</a></li>
 <li><a class="social-pill" href="https://www.linkedin.com/in/thanhvtr"><span class="symbol">in</span>LinkedIn</a></li>
-<li><a class="social-pill" href="./publications.html"><span class="symbol">AR</span>Articles</a></li>
+<li><a class="social-pill" href="https://scholar.google.com/citations?user=bks0rMYAAAAJ&amp;hl=en"><span class="symbol">GS</span>Scholar</a></li>
 </ul>
 </section>
 </div>
@@ -42,26 +42,26 @@
 <div class="section-head">
 <div>
 <p class="eyebrow">About</p>
-## Know who I am.
+## AI products people can rely on.
 </div>
-<p>Principal data scientist and AI engineer working across analytics, modelling, and decision support.</p>
+<p>I work where technical quality, operational constraints, and organisational decisions meet.</p>
 </div>
 <div class="split-grid">
 <article class="hero-summary">
 <h3>Current focus</h3>
-<p>I lead analytics work where data products influence decisions directly: academic planning, student outcomes, operational intelligence, AI validation, and evidence-backed prioritisation. The common thread is building systems that are legible to non-technical stakeholders without diluting the technical standard underneath them.</p>
-<p>I am strongest when the job requires both modelling depth and communication discipline, especially in environments where the output has to survive governance, operational constraints, and real downstream decisions.</p>
+<p>I lead data and AI work across student success, transport operations, model validation, and executive analytics. The work starts with the decision or process that needs to improve, not with a preferred model or tool.</p>
+<p>My PhD in multimodal deep learning provides the technical depth. Industry delivery has taught me the harder part: setting useful evaluation criteria, earning stakeholder trust, managing release risk, and making systems dependable in practice.</p>
 </article>
 <article class="skill-cluster">
-<p class="mini-label">Recent highlights</p>
-<h3>What the work has included lately.</h3>
+<p class="mini-label">Operating principles</p>
+<h3>How I approach the work.</h3>
 <div class="tool-row">
-<span class="tool-badge">Power BI KPI dashboards</span>
-<span class="tool-badge">Bronze-silver-gold analytics layers</span>
-<span class="tool-badge">Freeway CCTV model evaluation</span>
-<span class="tool-badge">Multimodal road-asset grading</span>
-<span class="tool-badge">Transportation Research Part C</span>
-<span class="tool-badge">Teaching and mentoring</span>
+<span class="tool-badge">Decision first</span>
+<span class="tool-badge">Evaluation before scale</span>
+<span class="tool-badge">Human review by design</span>
+<span class="tool-badge">Traceable delivery</span>
+<span class="tool-badge">Stakeholder adoption</span>
+<span class="tool-badge">Measurable outcomes</span>
 </div>
 </article>
 </div>
@@ -70,73 +70,70 @@
 <section id="focus">
 <div class="section-head">
 <div>
-<p class="eyebrow">Professional Skillset</p>
-## Core capabilities.
+<p class="eyebrow">Capabilities</p>
+## Where I create leverage.
 </div>
-<p>Analytics engineering, applied machine learning, decision intelligence, cloud platforms, research, and communication.</p>
+<p>The highest-value work sits between technical systems and the people accountable for using them.</p>
 </div>
 <div class="skill-grid">
-<article class="skill-tile"><strong>Analytics Engineering</strong><span>Scalable reporting layers, metric design, KPI logic, multi-source data pipelines, and stakeholder-ready dashboards.</span></article>
-<article class="skill-tile"><strong>Applied Machine Learning</strong><span>Evaluation-heavy computer vision, multimodal prototypes, predictive modelling, uncertainty checks, and deployment-minded experimentation.</span></article>
-<article class="skill-tile"><strong>Decision Intelligence</strong><span>Forecasting, operational planning, validation analytics, risk framing, and evidence products for non-technical decision-makers.</span></article>
-<article class="skill-tile"><strong>Cloud and Data Platforms</strong><span>AWS SageMaker, Athena, S3, EC2, Docker, GitHub Actions, and reproducible delivery patterns for analytics teams.</span></article>
-<article class="skill-tile"><strong>Research and Evaluation</strong><span>Graph neural networks, multimodal deep learning, Top-k and MAP evaluation, calibration, OOD checks, and stress testing.</span></article>
-<article class="skill-tile"><strong>Teaching and Communication</strong><span>University teaching, HDR support workshops, mentoring, technical writing, and translating complex work into practical decisions.</span></article>
+<article class="skill-tile"><strong>AI Product and Delivery</strong><span>Problem definition, delivery roadmaps, cross-functional alignment, release decisions, and adoption in real workflows.</span></article>
+<article class="skill-tile"><strong>AI Assurance and Evaluation</strong><span>Baselines, stress tests, human evaluation, monitoring, traceability, and fit-for-purpose deployment decisions.</span></article>
+<article class="skill-tile"><strong>Decision Intelligence</strong><span>KPI design, forecasting, operational planning, executive reporting, and clear options for non-technical leaders.</span></article>
+<article class="skill-tile"><strong>Production ML Systems</strong><span>Cloud pipelines, APIs, CI/CD, release controls, and practical trade-offs across quality, latency, cost, and risk.</span></article>
+<article class="skill-tile"><strong>Data Foundations</strong><span>Governed reporting layers, shared metric definitions, multi-source pipelines, and data quality controls.</span></article>
+<article class="skill-tile"><strong>Technical Leadership</strong><span>Translating risk and trade-offs, building reusable practices, mentoring, and connecting technical work to organisational priorities.</span></article>
 </div>
 </section>
 
 <section>
 <div class="section-head">
 <div>
-<p class="eyebrow">Tools I Use</p>
-## Core stack.
+<p class="eyebrow">Technical Foundation</p>
+## Broad enough to choose the right approach.
 </div>
+<p>Hands-on capability supports the leadership work; it is not the whole proposition.</p>
 </div>
 <div class="tool-row">
-<span class="tool-badge">Power BI</span>
 <span class="tool-badge">Python</span>
 <span class="tool-badge">SQL</span>
 <span class="tool-badge">AWS</span>
-<span class="tool-badge">SageMaker</span>
-<span class="tool-badge">Athena</span>
-<span class="tool-badge">S3</span>
-<span class="tool-badge">Streamlit</span>
-<span class="tool-badge">Docker</span>
-<span class="tool-badge">GitHub Actions</span>
-<span class="tool-badge">LangChain</span>
-<span class="tool-badge">Transformers</span>
+<span class="tool-badge">Power BI</span>
+<span class="tool-badge">Machine Learning</span>
+<span class="tool-badge">Generative AI</span>
+<span class="tool-badge">Computer Vision</span>
+<span class="tool-badge">Analytics Engineering</span>
 </div>
 </section>
 
 <section id="projects">
 <div class="section-head">
 <div>
-<p class="eyebrow">Recent Works</p>
-## Selected projects and case studies.
+<p class="eyebrow">Selected Outcomes</p>
+## Evidence from delivered work.
 </div>
-<p>Selected work across applied analytics, AI validation, and public research.</p>
+<p>Three examples spanning AI adoption, production ML, and enterprise decision support.</p>
 </div>
 <div class="project-grid">
 <article class="project">
-<p class="meta">Applied Analytics</p>
-<h3>State-wide Data Products</h3>
-<p>Interactive KPI dashboards and planning analytics across large operational, customer, survey, ticketing, and event-level datasets.</p>
-<div class="tags"><span class="tag">Power BI</span><span class="tag">Athena</span><span class="tag">Decision Support</span></div>
-<p class="links"><a href="./project-showcase.html#state-wide-data-products">Open case study</a></p>
+<p class="meta">AI Adoption</p>
+<h3>Transport insight assistant</h3>
+<p>Built an agentic AI assistant for routine transport insight queries, reducing manual modelling requests by about 30% while retaining traceability and human review.</p>
+<div class="tags"><span class="tag">Agentic AI</span><span class="tag">Assurance</span><span class="tag">Adoption</span></div>
+<p class="links"><a href="./project-showcase.html#agentic-transport-insights">Open case study</a></p>
 </article>
 <article class="project">
-<p class="meta">Applied AI</p>
-<h3>AI Camera Validation Analytics</h3>
-<p>Evaluation and decision analytics for video-derived AI camera outputs, working down to second-level and frame-level evidence.</p>
-<div class="tags"><span class="tag">Computer Vision</span><span class="tag">Validation</span><span class="tag">Operational Readiness</span></div>
-<p class="links"><a href="./project-showcase.html#ai-camera-validation-analytics">Open case study</a></p>
+<p class="meta">Production ML</p>
+<h3>Generative image quality</h3>
+<p>Shipped image-inpainting models that improved production image quality by 5-10%, using technical metrics and human preference to guide release decisions.</p>
+<div class="tags"><span class="tag">Generative AI</span><span class="tag">Evaluation</span><span class="tag">MLOps</span></div>
+<p class="links"><a href="./project-showcase.html#production-generative-imaging">Open case study</a></p>
 </article>
 <article class="project">
-<p class="meta">Research</p>
-<h3>Multimodal Deep Learning Research</h3>
-<p>Graph and multimodal models for real-time prediction across complex spatiotemporal transport systems, backed by public papers and conference presentations.</p>
-<div class="tags"><span class="tag">Multimodal</span><span class="tag">GNN</span><span class="tag">Open Access</span></div>
-<p class="links"><a href="./project-showcase.html#multimodal-deep-learning-research">Open case study</a></p>
+<p class="meta">Decision Intelligence</p>
+<h3>Student success analytics</h3>
+<p>Built shared analytics and executive dashboards that connect student and institutional data for earlier risk, priority, and planning decisions.</p>
+<div class="tags"><span class="tag">Analytics Engineering</span><span class="tag">Power BI</span><span class="tag">Leadership</span></div>
+<p class="links"><a href="./project-showcase.html#student-success-analytics">Open case study</a></p>
 </article>
 </div>
 </section>
@@ -145,29 +142,29 @@
 <div class="section-head">
 <div>
 <p class="eyebrow">Experience</p>
-## Roles with technical and organisational range.
+## Research depth, industry delivery.
 </div>
-<p>Recent roles across analytics leadership, applied machine learning, and doctoral research.</p>
+<p>Experience across higher education, government, transport, and digital products.</p>
 </div>
 <div class="timeline">
-<article class="role"><p class="meta">Feb 2026 - Present</p><h3>Senior Principal Data Analyst</h3><p>The University of Queensland</p><p class="links"><a href="./experience-showcase.html#senior-principal">Open role details</a></p></article>
-<article class="role"><p class="meta">Jun 2024 - Jan 2026</p><h3>Machine Learning / Data Scientist</h3><p>Department for Infrastructure and Transport</p><p class="links"><a href="./experience-showcase.html#data-scientist">Open role details</a></p></article>
-<article class="role"><p class="meta">Jan 2021 - Jun 2024</p><h3>Doctoral AI Researcher</h3><p>University of Queensland and Department of Transport and Main Roads</p><p class="links"><a href="./experience-showcase.html#doctoral-ai-researcher">Open role details</a></p></article>
+<article class="role"><p class="meta">Feb 2026 - Present</p><h3>Senior Principal, Data Analytics</h3><p>The University of Queensland</p><p class="links"><a href="./experience-showcase.html#senior-principal">Open role details</a></p></article>
+<article class="role"><p class="meta">May 2024 - Feb 2026</p><h3>Machine Learning / Data Scientist</h3><p>Department for Infrastructure and Transport</p><p class="links"><a href="./experience-showcase.html#data-scientist">Open role details</a></p></article>
+<article class="role"><p class="meta">Dec 2023 - Mar 2024</p><h3>Machine Learning Engineer</h3><p>Shorthand</p><p class="links"><a href="./experience-showcase.html#shorthand">Open role details</a></p></article>
 </div>
 </section>
 
 <section id="publications">
 <div class="section-head">
 <div>
-<p class="eyebrow">Public Research</p>
-## Papers, talks, and visible technical work.
+<p class="eyebrow">Technical Depth</p>
+## Peer-reviewed AI research.
 </div>
-<p>Open-access papers and conference work across multimodal deep learning and real-time prediction.</p>
+<p>Public evidence of rigorous multimodal modelling and evaluation at network scale.</p>
 </div>
 <div class="publication-grid">
-<article class="publication"><h3>M2NN: Multi-view multi-task graph neural network</h3><p>Transportation Research Part C, 2026. Public open-access article on multimodal incident forecasting with congestion heatmap imagery.</p><p class="links"><a href="https://doi.org/10.1016/j.trc.2025.105458">DOI</a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25004620">Article</a></p></article>
-<article class="publication"><h3>MSGNN: Multi-structured graph neural network</h3><p>Transportation Research Part C, 2023. Open-access work on network-wide real-time traffic incident prediction.</p><p class="links"><a href="https://doi.org/10.1016/j.trc.2023.104354">DOI</a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X23003443">Article</a></p></article>
-<article class="publication"><h3>Uncertainty-aware traffic incident prediction</h3><p>Conference paper and presentation on uncertainty-aware real-time incident prediction using Brisbane and Gold Coast networks.</p><p class="links"><a href="https://trc-30.epfl.ch/wp-content/uploads/2024/09/TRC-30_paper_152.pdf">PDF</a> <a href="./publications.html">Publication page</a></p></article>
+<article class="publication"><h3>M2NN: Multi-view multi-task graph neural network</h3><p>Transportation Research Part C, 2026. Multimodal incident forecasting using traffic data and congestion heatmap imagery.</p><p class="links"><a href="https://doi.org/10.1016/j.trc.2025.105458">DOI</a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X25004620">Article</a></p></article>
+<article class="publication"><h3>MSGNN: Multi-structured graph neural network</h3><p>Transportation Research Part C, 2023. Network-wide real-time traffic incident prediction using heterogeneous data.</p><p class="links"><a href="https://doi.org/10.1016/j.trc.2023.104354">DOI</a> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X23003443">Article</a></p></article>
+<article class="publication"><h3>Research profile</h3><p>Peer-reviewed publications, citation history, and the latest public record of my research.</p><p class="links"><a href="https://scholar.google.com/citations?user=bks0rMYAAAAJ&amp;hl=en">Google Scholar</a> <a href="./publications.html">All publications</a></p></article>
 </div>
 </section>
 
@@ -175,12 +172,13 @@
 <div class="section-head">
 <div>
 <p class="eyebrow">Contact</p>
-## Open to serious analytics and AI work.
+## Principal and lead AI opportunities.
 </div>
+<p>Best fit: roles connecting AI engineering, data science, assurance, and enterprise decision-making.</p>
 </div>
 <div class="card-grid">
-<article class="card"><h3>Email</h3><p>Best for roles, collaboration, and consulting conversations.</p><p class="links"><a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a></p></article>
-<article class="card"><h3>LinkedIn</h3><p>Professional profile and work history.</p><p class="links"><a href="https://www.linkedin.com/in/thanhvtr">linkedin.com/in/thanhvtr</a></p></article>
-<article class="card"><h3>GitHub</h3><p>Open-source projects, experiments, and code history.</p><p class="links"><a href="https://github.com/thanhvotran">github.com/thanhvotran</a></p></article>
+<article class="card"><h3>Email</h3><p>Roles, advisory work, and relevant collaborations.</p><p class="links"><a href="mailto:t.tranvo187@gmail.com">t.tranvo187@gmail.com</a></p></article>
+<article class="card"><h3>LinkedIn</h3><p>Professional profile and current experience.</p><p class="links"><a href="https://www.linkedin.com/in/thanhvtr">linkedin.com/in/thanhvtr</a></p></article>
+<article class="card"><h3>GitHub</h3><p>Selected code, experiments, and technical work.</p><p class="links"><a href="https://github.com/thanhvotran">github.com/thanhvotran</a></p></article>
 </div>
 </section>

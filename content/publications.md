@@ -1,9 +1,11 @@
 <section class="panel hero-copy">
-<p class="eyebrow">Publication Showcase</p>
+<p class="eyebrow">Publications</p>
 
-# Public research and papers.
+# Peer-reviewed AI research.
 
-<p class="lede">The journal papers are open-access article pages. The conference paper below has a direct public PDF that can be embedded. Some publisher PDF viewers block iframe display; the DOI and article links remain the reliable source of record.</p>
+<p class="lede">Research in multimodal learning, graph neural networks, uncertainty, and real-time prediction, grounded in large transport networks.</p>
+
+<div class="actions"><a class="button" href="https://scholar.google.com/citations?user=bks0rMYAAAAJ&amp;hl=en">View Google Scholar</a></div>
 </section>
 
 <section id="m2nn" class="publication">
@@ -37,7 +39,7 @@
 
 - Extends real-time traffic incident prediction with uncertainty-aware evaluation.
 - Uses Brisbane and Gold Coast traffic networks in the experimental setup.
-- Direct public PDF is embedded below.
+- Presented as public work on uncertainty and model reliability under real-time conditions.
 
 <p class="links"><a href="https://trc-30.epfl.ch/wp-content/uploads/2024/09/TRC-30_paper_152.pdf">Open PDF</a></p>
 <iframe class="pdf-frame" title="Uncertainty-aware framework PDF" src="https://trc-30.epfl.ch/wp-content/uploads/2024/09/TRC-30_paper_152.pdf"></iframe>
