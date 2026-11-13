@@ -1,25 +1,27 @@
-# Thanh Tran
+# Thanh (Tom) Tran, Ph.D.
 
-Principal data scientist and AI leader in Brisbane, building dependable data and AI products from ambiguous problems through evaluation, delivery, and adoption.
+<p class="vcard-meta">Applied ML | LLM/RAG | Computer Vision | Decision Analytics</p>
+
+Data scientist and AI lead with 5+ years across higher education, government and product AI. Ph.D. in Computer Science (AI) on multimodal deep learning, completed with Queensland's Department of Transport and Main Roads. I build predictive models, LLM/RAG assistants and analytics architecture that move from prototype to use, with validation and human review built in. Currently Senior Principal Data Analytics at the University of Queensland, advising faculty executives on student success and performance.
 
 <div class="vcard-grid">
 <div class="vcard-card">
 <h3>Current Focus</h3>
-<p>AI assurance, decision intelligence, analytics engineering, and production ML for stakeholder-facing use.</p>
+<p>Student-success and completion-risk models, faculty-wide analytics architecture, and executive decision support at UQ.</p>
 </div>
 <div class="vcard-card">
-<h3>Delivery Evidence</h3>
-<p>30% fewer routine transport modelling requests through self-serve AI; 5-10% better production image quality at Shorthand.</p>
+<h3>Recent Work</h3>
+<p>A retrieval-augmented AI assistant that reduced processing time and manual effort for transport-insight requests, plus AI-assisted document extraction with human review.</p>
 </div>
 </div>
 
-## Where I Create Leverage
+## Key Strengths
 
-- Frame the decision and operating need before choosing a model or tool.
-- Set evaluation criteria, stress tests, traceability, and human review before scale.
-- Connect technical teams, domain specialists, and senior stakeholders around clear trade-offs.
-- Build data and AI products that are useful, explainable, and dependable in practice.
+- **Applied ML and evaluation:** predictive and risk models, graph and multimodal deep learning, uncertainty, calibration and robustness testing.
+- **Generative AI with controls:** retrieval-augmented assistants with source referencing; document-AI extraction with validation and human review.
+- **Data and analytics engineering:** layered (bronze-silver-gold) data architecture, Python/SQL pipelines on AWS, Power BI and Streamlit decision tools.
+- **Decision support:** turning executive questions into measurable analytics, and explaining findings, limitations and trade-offs to senior stakeholders.
 
 ## Technical Foundation
 
-My PhD in multimodal deep learning provides the research depth. My industry work spans Python, SQL, AWS, Power BI, generative AI, computer vision, analytics engineering, APIs, and controlled ML releases.
+Python, PyTorch, scikit-learn, Transformers, LLMs/RAG, LangChain, LangGraph, computer vision, graph neural networks, NLP, SQL, AWS (SageMaker, S3, Athena, EC2), Databricks, FastAPI, Docker, GitHub Actions, Power BI, Streamlit.
