@@ -59,5 +59,5 @@
 
 - Developed network-wide traffic incident prediction models using graph neural networks and multi-task, multi-view learning.
 - Published two first-author papers in Transportation Research Part C.
-<p class="vcard-links"><a href="https://doi.org/10.1016/j.trc.2023.104354">MSGNN DOI</a><a href="https://doi.org/10.1016/j.trc.2025.105458">M2NN DOI</a></p>
+<p class="vcard-links"><a href="https://doi.org/10.1016/j.trc.2023.104354" target="_blank" rel="noreferrer">MSGNN DOI</a><a href="https://doi.org/10.1016/j.trc.2025.105458" target="_blank" rel="noreferrer">M2NN DOI</a></p>
 </div>
